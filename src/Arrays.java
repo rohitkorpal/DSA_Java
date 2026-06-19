@@ -23,6 +23,7 @@ public class Arrays {
 
 
 
+
 //        int arr[]= {12,34,22};
 //        int n = arr.length;
 //        for (int i=0; i<=n-1; i++){
