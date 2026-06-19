@@ -132,13 +132,127 @@ public class Arrays {
 //        }
 
 
+//        int[][] matrix = {
+//                {1,},
+//                {4, 5},
+//                {7, 8, 9},
+//                {10, 11, 12, 43},
+//        };
+//
+//        int rowLength = matrix.length;
+
+//        for(int i = 0; i < rowLength; i++) {
+//            // jaise hi main kisi new row ma aaya
+//            // same point pr maine uss row ka colLength find out krlia
+//            // current row --> matrix[i]
+//            // isme kitna columns--> matrix[i].length
+//            int colLength = matrix[i].length;
+//            for(int j = 0; j < colLength; j++) {
+//                System.out.print(matrix[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
+
+        //traversal 2D arrays [SHORT WAY]
+
+//        int[][] matrix = {
+//                {1,},
+//                {4, 5},
+//                {7, 8, 9},
+//                {10, 11, 12, 43},
+//        };
+//        for (int i=0; i<= matrix.length-1; i++) {
+//            for (int j=0; j<= matrix[i].length-1; j++) {
+//                System.out.print(matrix[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
+
+
+        // taking user input in 2D array
+
+//        int arr [][] = new int[3][4];
+//        Scanner sc = new Scanner(System.in);
+//
+//        for (int i = 0; i <= arr.length-1; i++) {
+//            for (int j = 0; j <= arr[i].length-1; j++) {
+//                System.out.println(i + " " + j);
+//                arr[i][j] = sc.nextInt();
+//            }
+//        }
+//        for (int i = 0; i <= arr.length-1; i++) {
+//            for (int j = 0; j <= arr[i].length-1; j++) {
+//                System.out.print(arr[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
+
+
+        // Q1 sum elemennts of 2D array
+//        int[][] matrix = {
+//                {1,},
+//                {4, 5},
+//                {7, 8, 9},
+//                {10, 11, 12, 43},
+//        };
+//        int sum= 0;
+//        for (int i = 0; i < matrix.length; i++) {
+//            for (int j = 0; j < matrix[i].length; j++) {
+//                sum = sum + matrix[i][j];
+//            }
+//        }
+//        System.out.println(sum);
+
+        //Q2 multiply
+//        int[][] matrix = {
+//                {1,},
+//                {2, 3},
+//                {1, 2, 3},
+//                {1, 1, 2, 3},
+//        };
+//        int mul= 1;
+//        for (int i = 0; i < matrix.length; i++) {
+//            for (int j = 0; j < matrix[i].length; j++) {
+//                mul = mul * matrix[i][j];
+//            }
+//        }
+//        System.out.println(mul);
+
+        // max value in 2D array
+//        int[][] matrix = {
+//                {1,},
+//                {4, 5},
+//                {7, 8, 9},
+//                {10, 11, 12, 43},
+//        };
+//        int maxVal= 0;
+//        for (int i = 0; i < matrix.length; i++) {
+//            for (int j = 0; j < matrix[i].length; j++) {
+//                if  (matrix[i][j] > maxVal) {
+//                    maxVal = matrix[i][j];
+//                }
+//            }
+//        }
+//        System.out.println(maxVal);
+
+        //Q4 min value
         int[][] matrix = {
                 {1,},
                 {4, 5},
                 {7, 8, 9},
+                {10, 11, 12, 43},
         };
+        int minVal= matrix[0][0];
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                if  (matrix[i][j] < minVal) {
+                    minVal = matrix[i][j];
+                }
+            }
+        }
+        System.out.println(minVal);
 
-        int rowLength = matrix.length;
+
 
 
     }
