@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Arrays {
     static void main() {
 
-
         // Q1 sum
 //        int arr[]= {23,54,22,23,43};
 //        int sum=0;
@@ -14,13 +13,13 @@ public class Arrays {
 //        System.out.println(sum);
 
         // Q2 multiply
-        int []arr= {2,4,5,3};
-        int mul=1;
-        int n= arr.length;
-        for (int i=0;i<n;i++) {
-            mul=mul*arr[i];
-        }
-        System.out.println(mul);
+//        int []arr= {2,2,2,2};
+//        int mul=1;
+//        int n= arr.length;
+//        for (int i=0;i<n;i++) {
+//            mul=mul*arr[i];
+//        }
+//        System.out.println(mul);
 
 
 
