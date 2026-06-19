@@ -236,21 +236,21 @@ public class Arrays {
 //        System.out.println(maxVal);
 
         //Q4 min value
-        int[][] matrix = {
-                {1,},
-                {4, 5},
-                {7, 8, 9},
-                {10, 11, 12, 43},
-        };
-        int minVal= matrix[0][0];
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                if  (matrix[i][j] < minVal) {
-                    minVal = matrix[i][j];
-                }
-            }
-        }
-        System.out.println(minVal);
+//        int[][] matrix = {
+//                {1,},
+//                {4, 5},
+//                {7, 8, 9},
+//                {10, 11, 12, 43},
+//        };
+//        int minVal= matrix[0][0];
+//        for (int i = 0; i < matrix.length; i++) {
+//            for (int j = 0; j < matrix[i].length; j++) {
+//                if  (matrix[i][j] < minVal) {
+//                    minVal = matrix[i][j];
+//                }
+//            }
+//        }
+//        System.out.println(minVal);
 
 
 
