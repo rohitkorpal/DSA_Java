@@ -21,6 +21,18 @@ public class Arrays {
 //        }
 //        System.out.println(mul);
 
+         // Q3 to find maximum element in an array
+
+        int [] arr= {30,2,4,28,-5,35};
+        int n= arr.length;
+        int maxValue= arr[0];
+
+        for(int i=0;i<n;i++) {
+            if(arr[i]>maxValue) {
+                maxValue=arr[i];
+            }
+        }
+        System.out.println(maxValue);
 
 //        int arr[]= {12,34,22};
 //        int n = arr.length;
