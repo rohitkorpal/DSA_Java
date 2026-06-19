@@ -22,8 +22,6 @@ public class Arrays {
 //        System.out.println(mul);
 
 
-
-
 //        int arr[]= {12,34,22};
 //        int n = arr.length;
 //        for (int i=0; i<=n-1; i++){
