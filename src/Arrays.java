@@ -21,8 +21,7 @@ public class Arrays {
 //        }
 //        System.out.println(mul);
 
-         // Q3 to find maximum element in an array
-
+        // Q3 to find maximum element in an array
 //        int [] arr= {30,2,4,28,-5,35};
 //        int n= arr.length;
 //        int maxValue= arr[0];
@@ -33,6 +32,22 @@ public class Arrays {
 //            }
 //        }
 //        System.out.println(maxValue);
+
+
+        //Q4 find the minimum value in an array
+
+//        int[] arr = {3, 4, 1, -5, -2, 10};
+//        int n = arr.length;
+//        int minValue = arr[0];
+//
+//        for (int i = 0; i < n; i++) {
+//            if (arr[i] < minValue) {
+//                //minValue Update
+//                minValue = arr[i];
+//            }
+//        }
+//        System.out.println(minValue);
+
 
 //        int arr[]= {12,34,22};
 //        int n = arr.length;
@@ -89,6 +104,24 @@ public class Arrays {
         //for input
         //arr[1]= sc.next int()
 
+
+        // 2D ARRAYS
+
+        // for searching an element in 2d array - arr[row index] [column index]
+        // 2D array is simply a matrix
+        // we read in matrix form but hota wo 1D array ki trh single and continuous hi
+        // declaration
+//         int [][] matrix ;
+//         initialization
+//         int [][] matrix = new int [3][3];
+//         OR
+        int[][] matrix = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9},
+        };
+        // indexingg 0 se start hoti hai - row/column(0,1,2.......)
+        System.out.println(matrix[2][2]);
 
 
     }
