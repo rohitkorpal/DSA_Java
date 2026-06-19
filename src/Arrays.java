@@ -115,13 +115,30 @@ public class Arrays {
 //         initialization
 //         int [][] matrix = new int [3][3];
 //         OR
+//        int[][] matrix = {
+//                {1, 2, 3},
+//                {4, 5, 6},
+//                {7, 8, 9},
+//        };
+//        // indexing 0 se start hoti hai - row/column(0,1,2.......)
+//        //System.out.println(matrix[2][2]);
+//        int ilength = matrix.length;
+//        int jLength = matrix[0].length;// ye no. of column nikalna ka tareka tbhi kaam krega jb hr row mai same column honge. column ka lia row ka 0 element ko pkdo aur iterate krdo
+//        for (int i = 0; i <=ilength-1; i++) {
+//            for(int j=0; j<= jLength-1; j++) {
+//                System.out.print(matrix[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
+
+
         int[][] matrix = {
-                {1, 2, 3},
-                {4, 5, 6},
+                {1,},
+                {4, 5},
                 {7, 8, 9},
         };
-        // indexingg 0 se start hoti hai - row/column(0,1,2.......)
-        System.out.println(matrix[2][2]);
+
+        int rowLength = matrix.length;
 
 
     }
