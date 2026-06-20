@@ -296,7 +296,6 @@ public class Arrays {
 //        }
 
         // transpose of a 2D matrix
-
         int [][]matrix ={
                 {1,2,3},
                 {4,5,6},
