@@ -273,6 +273,42 @@ public class Arrays {
 //        }
 
 
+        // LINEAR SEARCH ALGORITHM
+        // for searching a single element
+//        int arr[]= {23,53,13,55,86,32,55};
+//        int target = 53 ;
+//        for (int i=0; i<arr.length; i++) {
+//            if (arr[i] == target) {
+//                System.out.print(arr[i]);
+//            }
+//        }
+
+        // for searching multiple elements in an array
+//        int[] arr = {23, 53, 13, 55, 86, 32, 55};
+//        int[] target = {53, 13};
+//
+//        for (int i = 0; i < arr.length; i++) {
+//            for (int j = 0; j < target.length; j++) {
+//                if (arr[i] == target[j]) {
+//                    System.out.println(arr[i]);
+//                }
+//            }
+//        }
+
+        // transpose of a 2D matrix
+
+        int [][]matrix ={
+                {1,2,3},
+                {4,5,6},
+                {7,8,9}
+        };
+        for (int j=0; j< matrix[0].length; j++) {
+            for (int i=0; i<matrix.length; i++){
+                System.out.print(matrix[i][j]+ " ");
+            }
+            System.out.println();
+        }
+
 
     }
 }
