@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class Arrays {
     static void main() {
 
+        //An array is a collection of elements of the same data type stored in continuous memory locations.
+
         // Q1 sum
 //        int arr[]= {23,54,22,23,43};
 //        int sum=0;
@@ -252,6 +254,23 @@ public class Arrays {
 //        }
 //        System.out.println(minVal);
 
+
+        // Q reverse of an 1D array
+
+//        int [] arr = {1,2,3,4,5,6,7,8,9,10};
+//
+//        int start= 0, end = arr.length-1;// these are the indexes and not the va;ue of arrays
+//        while(start<end){//checks the index
+//            int temp = arr[start];
+//            arr[start]= arr[end];
+//            arr[end]= temp;
+//            // Because the elements at index 0 and 4 are already in their final reversed positions. so we move the pointers inwards
+//            start++;// move from left toward center
+//            end--;// move from right toward center
+//        }
+//        for(int i=0;i<arr.length;i++){
+//            System.out.print(arr[i]+" ");
+//        }
 
 
 
