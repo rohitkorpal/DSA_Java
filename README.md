@@ -5,12 +5,14 @@ This repository contains my solutions and implementations of Data Structures and
 ## Topics Covered
 - Arrays
 - Strings
-- Linked Lists
-- Stacks
-- Queues
-- Trees
-- Graphs
-- Dynamic Programming
+- Conditionals
+- Datatypes
+- Loops
+- Methods
+- Operators
+- PatternSolving
+- TakingInput
+- Variables
 
 ## Goal
 Consistent DSA practice for placements and problem-solving improvement.
