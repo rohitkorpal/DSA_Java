@@ -126,9 +126,5 @@ public record ArrayHW() {
         }
 
 
-
-
-
-
     }
 }
