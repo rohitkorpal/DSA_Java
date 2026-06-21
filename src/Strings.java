@@ -1,6 +1,12 @@
 import java.util.Scanner;
 
 public class Strings {
+    static void printString(String str){
+        int n = str.length();
+        for(int i = 0; i < n; i++){
+            System.out.println(str.charAt(i));
+        }
+    }
     static <scanner> void main() {
         // string is a sequence of characters
         // character uses ' ' & string uses " "
@@ -117,14 +123,33 @@ public class Strings {
 //        System.out.println(name.startsWith("My name"));
 //        System.out.println(name.endsWith("Rohit"));
 
-        String name ="Rohit";
-        char[] chars = name.toCharArray();
+//        String name = "Rohit";
+//        char[] chars = name.toCharArray();
+//
+//        //print the char array
+//        for (char ch : chars) {
+//            System.out.println("value of char:" + ch);
+//        }
 
-        //print the char array
-        for(char ch : chars){
-            System.out.println("value of char:"+ ch);
-        }
+        //split -> output -> string array
+//        String input = "My,name ,is ,rohit ,korpal";
+//        String [] words = input.split(",");
+//        for(String word : words){
+//            System.out.println(word);
+//        }
 
+//        String name = "Rohit";
+//        name = name.replace('R', 'l');
+//        System.out.println(name);
+
+        // aLL 15 DONE//
+
+        //QUESTIONS//
+        //Q1- PRINT EACH CHARACTER OF STRING
+        //function crated above
+
+        String str= "Rohit";
+        printString(str);
 
 
     }
