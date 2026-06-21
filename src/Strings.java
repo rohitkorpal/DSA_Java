@@ -1,5 +1,7 @@
+import java.util.Scanner;
+
 public class Strings {
-    static void main() {
+    static <scanner> void main() {
         // string is a sequence of characters
         // character uses ' ' & string uses " "
         // String str = "Rohit"  <--- declaration (way 1 using string literal)
@@ -15,7 +17,7 @@ public class Strings {
 //        String lastName= new String("korpal");
 //        System.out.println(firstName+" "+lastName);
 //        //System.out.println(firstName[0]); wrong way
-//        System.out.println(firstName.length());
+//        System.out.println(firstName.length()); //count of character
 //        System.out.println(lastName.charAt(0));
 
 
@@ -30,22 +32,38 @@ public class Strings {
         // 2- .equals()
         // 3- .equalsIgnoreCase()
 
-        String str1 = "abc";
-        String str2 = "ABC";
-        if (str1==str2) { // (==) does not compare the content but they check whether the variable are refering to same place or not
-            System.out.println("both are equal");
-        }else  {
-            System.out.println("both are not equal");
-        }
+//        String str1 = "abc";
+//        String str2 = "ABC";
+//        if (str1==str2) { // (==) does not compare the content but they check whether the variable are referring to same place or not
+//            System.out.println("both are equal");
+//        }else  {
+//            System.out.println("both are not equal");
+//        }
 
-        // .equals() --> checks the inner content of variable and not just the reference. it is case sensitive
-        // .equalsIgnoreCase --> matches the inner content but is not case sensitive [ignores cases just checks the letters]
+        // .equals() --> checks the inner content of variable and not just the reference. it is case-sensitive
+        // .equalsIgnoreCase --> matches the inner content but is not case-sensitive [ignores cases just checks the letters]
 
+//        String str1 = "abc";
+//        String str2 = "ABC";
+//        if (str1.equals(str2)) { //case-sensitive
+//            System.out.println("both are equal");
+//        }else  {
+//            System.out.println("both are not equal");
+//        }
 
+//        String str1 = "abc";
+//        String str2 = "ABC";
+//        if (str1.equalsIgnoreCase(str2)) { //case-insensitive
+//            System.out.println("both are equal");
+//        }else  {
+//            System.out.println("both are not equal");
+//        }
 
-
-
-
+        // String input
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a string: ");
+        String str = sc.nextLine();
+        System.out.println("value: "+ str);
 
     }
 }
