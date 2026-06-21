@@ -38,7 +38,7 @@ public class Strings {
     static boolean isPalindrome(String str) {
 
         int start = 0;
-        int end = str.length() - 1;
+        int end = str.length() - 1; // this approach is better becz of memory and space complexity is less
 
         while (start < end) {
 
@@ -50,6 +50,18 @@ public class Strings {
             end--;
         }
 
+        return true;
+    }
+
+    static boolean isPalindrome1(String str) {
+        String original = str;
+        String reverse = reverseString(original);
+        //compare
+        for  (int i = 0; i < original.length(); i++) {
+            if (original.charAt(i) != reverse.charAt(i)) {
+                return false;
+            }
+        }
         return true;
     }
 
@@ -213,17 +225,17 @@ public class Strings {
         //Q5 - CHECKING STRING IS PALINDROME OR NOT
         // (.equals) use nhi kr skte becz wo string pe chlta hai and palindrome ka lia huma character compare krna pdega
         // so uska lia hum '==' use krega. ek initial index rkha and ek final, dono compare kra then andar traverse krda
-        String str = "Rohit";
 
-        if (isPalindrome(str)) {
-            System.out.println("Palindrome");
-        } else {
-            System.out.println("Not Palindrome");
-        }
+        // TWO POINTER METHOD - MORE EFFICIENT
+//        String str = "Rohit";
+//        if (isPalindrome(str)) { //way 1
+//            System.out.println("Palindrome");
+//        } else {
+//            System.out.println("Not Palindrome");
+//        }
 
-
-
-
+//        String str = "madam";//way2
+//        System.out.println(isPalindrome1(str));
 
 
     }
