@@ -35,6 +35,24 @@ public class Strings {
         return reverse;
     }
 
+    static boolean isPalindrome(String str) {
+
+        int start = 0;
+        int end = str.length() - 1;
+
+        while (start < end) {
+
+            if (str.charAt(start) != str.charAt(end)) {
+                return false;
+            }
+
+            start++;
+            end--;
+        }
+
+        return true;
+    }
+
     static <scanner> void main() {
         // string is a sequence of characters
         // character uses ' ' & string uses " "
@@ -191,6 +209,21 @@ public class Strings {
 //        String name = "ROhitK";
 //        //reverse string = KtihOR
 //        System.out.println(reverseString(name));
+
+        //Q5 - CHECKING STRING IS PALINDROME OR NOT
+        // (.equals) use nhi kr skte becz wo string pe chlta hai and palindrome ka lia huma character compare krna pdega
+        // so uska lia hum '==' use krega. ek initial index rkha and ek final, dono compare kra then andar traverse krda
+        String str = "Rohit";
+
+        if (isPalindrome(str)) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
+        }
+
+
+
+
 
 
     }
