@@ -113,6 +113,17 @@ public class Strings {
 //        System.out.println(num+1);
 //        System.out.println(str + 1); // string mai +1 is concatenation
 
+//        String name ="My name is Rohit";
+//        System.out.println(name.startsWith("My name"));
+//        System.out.println(name.endsWith("Rohit"));
+
+        String name ="Rohit";
+        char[] chars = name.toCharArray();
+
+        //print the char array
+        for(char ch : chars){
+            System.out.println("value of char:"+ ch);
+        }
 
 
 
