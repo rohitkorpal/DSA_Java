@@ -7,6 +7,25 @@ public class Strings {
             System.out.println(str.charAt(i));
         }
     }
+    static int getLength(String str){
+        int count = 0;
+        for (char ch : str.toCharArray()){
+            count ++;
+        }
+        return count;
+    }
+
+    static int getVowelCount(String str) {
+        int count = 0;
+        for (int i=0; i<str.length();i++){
+            char ch = str.charAt(i);
+            if(ch=='a' || ch=='e' || ch=='i' || ch=='o'|| ch=='u'||ch=='A' || ch=='E' || ch=='I' || ch=='O'|| ch=='U'){
+                count++;
+            }
+        }
+        return count;
+    }
+
     static <scanner> void main() {
         // string is a sequence of characters
         // character uses ' ' & string uses " "
@@ -145,11 +164,22 @@ public class Strings {
         // aLL 15 DONE//
 
         //QUESTIONS//
-        //Q1- PRINT EACH CHARACTER OF STRING
         //function crated above
+        //Q1- PRINT EACH CHARACTER OF STRING
 
-        String str= "Rohit";
-        printString(str);
+//        String str= "Rohit";
+//        printString(str);
+
+        //Q2- count length of string without length
+        //String str = "RohitK";
+        //System.out.println(getLength(str));
+
+        //Q3- No. of vowels in string
+//        String name = "ROhitK";
+//        System.out.println(getVowelCount(name));
+
+        //Q4 - REVERSE A STRING
+        String name = "ROhitK";
 
 
     }
