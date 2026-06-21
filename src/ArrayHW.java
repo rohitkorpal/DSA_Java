@@ -92,9 +92,9 @@ public record ArrayHW() {
         int top = 0;
         int bottom = matrix.length - 1;
         int left = 0;
-        int right = matrix[0].length - 1;
+        int right = matrix[0].length - 1; //index
 
-        while (top <= bottom && left <= right) {
+        while (top <= bottom && left <= right) { //prevent duplicates.
 
             // Top Row
             for (int i = left; i <= right; i++) {
