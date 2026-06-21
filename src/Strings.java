@@ -60,10 +60,59 @@ public class Strings {
 //        }
 
         // String input
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a string: ");
-        String str = sc.nextLine();
-        System.out.println("value: "+ str);
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter a string: ");
+//        String str = sc.nextLine();
+//        System.out.println("value of next line: "+ str);
+//
+//        System.out.println("Enter a string: ");
+//        String str2 = sc.next();
+//        System.out.println("value of next: "+ str2);
+
+        // Strings methods//
+
+//        String str ="rohit";
+//        System.out.println(str.length());
+//        System.out.println(str.charAt(0));
+//        String name = "ROHIT";
+//        System.out.println(str.equals(name));
+//        System.out.println(str.equalsIgnoreCase(name));
+
+        //EMPTY --> string length = 0 then string is empty
+        //blank --> empty or sirf spaces h string mai
+//        String str = "  ";
+//        System.out.println(str.length());
+//        System.out.println(str.isEmpty());
+//        System.out.println(str.isBlank());
+
+//        String name= "    Rohit      ";
+//        System.out.println(name.length());
+//        System.out.println(name.isEmpty());
+//        System.out.println(name.isBlank());
+//        name = name.trim();
+//        System.out.println(name);
+//        System.out.println(name.length());
+
+//        String name ="Rohit";
+//        System.out.println(name.toUpperCase());
+//        String str = "ROHIT";
+//        System.out.println(str.toLowerCase());
+
+//        String str = "MY NAME IS ROHIT KORPAL";
+        // 0--> M
+        // 1-->Y
+        // 2-->space and so on
+        //beginningIndex--> 3 --> inclusive
+        //endIndex--> 6 --> exclusive(not included in substring)
+//        System.out.println(str.substring(3,6));
+//        System.out.println(str.contains("MY NAME"));// case sensitive
+
+//        int num= 5123;
+        //.valueOf() method is used to convert different data types (like int, float, boolean, char, arrays, or objects) into their corresponding String.
+//        String str = String.valueOf(num);
+//        System.out.println(num+1);
+//        System.out.println(str + 1); // string mai +1 is concatenation
+
 
     }
 }
