@@ -26,6 +26,15 @@ public class Strings {
         return count;
     }
 
+    static String reverseString(String str){
+        String reverse ="";
+        int n = str.length();
+        for(int i = n-1; i>=0; i--){
+            reverse += str.charAt(i);
+        }
+        return reverse;
+    }
+
     static <scanner> void main() {
         // string is a sequence of characters
         // character uses ' ' & string uses " "
@@ -179,7 +188,9 @@ public class Strings {
 //        System.out.println(getVowelCount(name));
 
         //Q4 - REVERSE A STRING
-        String name = "ROhitK";
+//        String name = "ROhitK";
+//        //reverse string = KtihOR
+//        System.out.println(reverseString(name));
 
 
     }
