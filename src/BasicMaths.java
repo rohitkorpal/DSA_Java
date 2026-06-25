@@ -4,7 +4,7 @@ public class BasicMaths {
         // '%10' get any last digit form the number
         // '/10' to remove it after '%10' operation
 
-        int n= 53127;
+        int n= 53127; //%10 gives 7 as the remainder
 
 
     }
