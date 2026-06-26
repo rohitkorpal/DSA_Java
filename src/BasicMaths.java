@@ -146,5 +146,8 @@ public class BasicMaths {
         int b = 12;
         System.out.println(getLCM(a,b));
 
+        //ARMSTRONG NUMBER
+        //eg 153---> i^3 + 2^3 + 3^3 = 153
+        // input == output
     }
 }
