@@ -91,6 +91,16 @@ public class BasicMaths {
         return ans;
     }
 
+    static int getLCM (int a, int b) {
+        int gcd = getGreatestCommonDivisor(a,b);
+        //gcd(18,12) = 6
+        int prod = a*b;
+        //prod(a,b)=216
+        int lcm = prod/gcd;
+        //216/6=36
+        return lcm;
+    }
+
     static void main() {
         //suppoose we need to get 5 from 57123 we use '%10'.
         // '%10' get any last digit form the number
@@ -128,9 +138,13 @@ public class BasicMaths {
 
         // GCD/HCF of a number
         // Eucledian formula is used ie gcd(a,b) = gcd (b,a%b)
-        System.out.println(getGreatestCommonDivisor(18,12));
+        //System.out.println(getGreatestCommonDivisor(18,12));
 
-
+        //LCM of a number
+        //LCM*HCF= a * b
+        int a = 18;
+        int b = 12;
+        System.out.println(getLCM(a,b));
 
     }
 }
