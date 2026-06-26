@@ -23,6 +23,17 @@ public class BasicMaths {
 
     }
 
+    static int sumOfDigits(int num) {
+        int sum = 0;
+        while (num != 0) {
+            int digit = num % 10;
+            sum += digit;
+            num = num / 10;
+        }
+        return sum;
+
+    }
+
     static void main() {
         //suppoose we need to get 5 from 57123 we use '%10'.
         // '%10' get any last digit form the number
@@ -34,8 +45,13 @@ public class BasicMaths {
 //        printDigits(num);
 
         //count digits of a number
-        int num = 53127;
-        int ans = countDigits(num);
+//        int num = 531127;
+//        int ans = countDigits(num);
+//        System.out.println(ans);
+
+        //Sum of digits of number
+        int num = 53748392;
+        int ans = sumOfDigits(num);
         System.out.println(ans);
 
 
