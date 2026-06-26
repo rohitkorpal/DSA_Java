@@ -167,5 +167,11 @@ public class BasicMaths {
         //ARMSTRONG NUMBER
         //eg 153---> i^3 + 2^3 + 3^3 = 153
         // input == output
+//        int num = 155;
+//        System.out.println(isArmstrong(num));
+
+
+
+
     }
 }
