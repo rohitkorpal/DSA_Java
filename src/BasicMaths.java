@@ -84,8 +84,9 @@ public class BasicMaths {
 //        System.out.println(revNum);
 
         // Palindrome number
-        int num = 1234;
-        isPalindrome(num);
+        int num = 1221;
+        boolean isPalindrome = isPalindrome(num);
+        System.out.println(isPalindrome);
 
 
     }
