@@ -118,6 +118,10 @@ public class BasicMaths {
         }
     }
 
+    static boolean isPerfectNum (int num) {
+        int sum = 1;
+
+    }
 
     static void main() {
         //suppoose we need to get 5 from 57123 we use '%10'.
@@ -170,6 +174,8 @@ public class BasicMaths {
 //        int num = 155;
 //        System.out.println(isArmstrong(num));
 
+        // find divisor or check perfect number
+        // perfect no. - if sum of all divisors of a number is equal to that number then that is a perfect number
 
 
 
