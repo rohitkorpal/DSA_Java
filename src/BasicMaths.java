@@ -44,6 +44,20 @@ public class BasicMaths {
         return revNum;
     }
 
+    static boolean isPalindrome(int num) {
+        int originalNum = num;
+        int reversedNum = reverseNum(num);
+        if (originalNum == reversedNum) {
+            System.out.println("Palindrome");
+            return true;
+        }
+        else  {
+            System.out.println("Not a palindrome");
+            return false;
+        }
+
+    }
+
     static void main() {
         //suppoose we need to get 5 from 57123 we use '%10'.
         // '%10' get any last digit form the number
@@ -65,9 +79,13 @@ public class BasicMaths {
 //        System.out.println(ans);
 
         // reverse a number
+//        int num = 1234;
+//        int revNum = reverseNum(num);
+//        System.out.println(revNum);
+
+        // Palindrome number
         int num = 1234;
-        int revNum = reverseNum(num);
-        System.out.println(revNum);
+        isPalindrome(num);
 
 
     }
