@@ -91,15 +91,33 @@ public class BasicMaths {
         return ans;
     }
 
-    static int getLCM (int a, int b) {
-        int gcd = getGreatestCommonDivisor(a,b);
+    static int getLCM(int a, int b) {
+        int gcd = getGreatestCommonDivisor(a, b);
         //gcd(18,12) = 6
-        int prod = a*b;
+        int prod = a * b;
         //prod(a,b)=216
-        int lcm = prod/gcd;
+        int lcm = prod / gcd;
         //216/6=36
         return lcm;
     }
+
+    static boolean isArmstrong(int num) {
+        int sum = 0;
+        int originalNum = num;
+
+        while (num != 0) {
+            int digit = num % 10;
+            int cubeOfDigit = digit * digit * digit;
+            sum += cubeOfDigit;
+            num = num / 10;
+        }
+        if (sum == originalNum) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 
     static void main() {
         //suppoose we need to get 5 from 57123 we use '%10'.
@@ -142,9 +160,9 @@ public class BasicMaths {
 
         //LCM of a number
         //LCM*HCF= a * b
-        int a = 18;
-        int b = 12;
-        System.out.println(getLCM(a,b));
+//        int a = 18;
+//        int b = 12;
+//        System.out.println(getLCM(a, b));
 
         //ARMSTRONG NUMBER
         //eg 153---> i^3 + 2^3 + 3^3 = 153
