@@ -34,6 +34,16 @@ public class BasicMaths {
 
     }
 
+    static int reverseNum(int num) {
+        int revNum = 0;
+        while (num != 0) {
+            int digit = num % 10;
+            revNum = revNum * 10 + digit;
+            num = num / 10;
+        }
+        return revNum;
+    }
+
     static void main() {
         //suppoose we need to get 5 from 57123 we use '%10'.
         // '%10' get any last digit form the number
@@ -50,9 +60,14 @@ public class BasicMaths {
 //        System.out.println(ans);
 
         //Sum of digits of number
-        int num = 53748392;
-        int ans = sumOfDigits(num);
-        System.out.println(ans);
+//        int num = 53748392;
+//        int ans = sumOfDigits(num);
+//        System.out.println(ans);
+
+        // reverse a number
+        int num = 1234;
+        int revNum = reverseNum(num);
+        System.out.println(revNum);
 
 
     }
