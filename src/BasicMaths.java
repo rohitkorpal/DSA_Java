@@ -1,3 +1,5 @@
+import javax.print.attribute.standard.PresentationDirection;
+
 public class BasicMaths {
     static void printDigits(int num) {
         // AGR mera num == 0 toh main rukjauga
@@ -118,8 +120,24 @@ public class BasicMaths {
         }
     }
 
-    static boolean isPerfectNum (int num) {
+    static boolean isPerfectNum(int num) {
         int sum = 1;
+        for (int i = 2; i * i <= num; i++) {
+            if (num % i == 0) {
+                //i ne num ko perfectly divide krdia h
+                // toh factor pair kya banega
+                // 1st factor --> i
+                // 2nd factor --> num/i
+                int firstFactor = i;
+                int secondFactor = num / i;
+                sum = sum + firstFactor + secondFactor;
+            }
+        }
+        if (sum == num) {
+            return true;
+        } else {
+            return false;
+        }
 
     }
 
@@ -176,7 +194,7 @@ public class BasicMaths {
 
         // find divisor or check perfect number
         // perfect no. - if sum of all divisors of a number is equal to that number then that is a perfect number
-
+        System.out.println(isPerfectNum(6));
 
 
     }
