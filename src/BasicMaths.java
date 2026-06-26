@@ -79,6 +79,18 @@ public class BasicMaths {
         return true;
     }
 
+    static int getGreatestCommonDivisor(int a, int b) {
+        //gcd(a,b)=gcd(b, a%b)
+        while (b != 0) {
+            int oldValueOfB = b;
+            b = a % b;
+            a = oldValueOfB;
+        }
+        //Jab mera b 0 hoga, tab a ki place pr gcd milega
+        int ans = a;
+        return ans;
+    }
+
     static void main() {
         //suppoose we need to get 5 from 57123 we use '%10'.
         // '%10' get any last digit form the number
@@ -110,9 +122,14 @@ public class BasicMaths {
 //        System.out.println(isPalindrome);
 
         // prime number
-        int num = 3;
-        boolean result = isPrimeOrNot(num);
-        System.out.println("is it a prime number:" + " " + result);
+//        int num = 3;
+//        boolean result = isPrimeOrNot(num);
+//        System.out.println("is it a prime number:" + " " + result);
+
+        // GCD/HCF of a number
+        // Eucledian formula is used ie gcd(a,b) = gcd (b,a%b)
+        System.out.println(getGreatestCommonDivisor(18,12));
+
 
 
     }
