@@ -50,12 +50,33 @@ public class BasicMaths {
         if (originalNum == reversedNum) {
             System.out.println("Palindrome");
             return true;
-        }
-        else  {
+        } else {
             System.out.println("Not a palindrome");
             return false;
         }
 
+    }
+
+    static boolean isPrimeOrNot(int num) {
+        for (int i = 2; i * i <= num; i++) {
+            if (num % i == 0) {
+                // not a prime
+                return false;
+            }
+        }
+//        for (int i = 2; i <= num - 1; i++) { // high time complexity becz loop running till n-1
+//            // best approach is to run till under root n
+//            if (num % i == 0) {
+//                // not a prime
+//                return false;
+//            }
+//        }
+        //yaha tabhi pahunchoga jab loop se baher nikloga
+        //or loop se tabhi baher nikloge jab kabhi bhi
+        //remainder ma zero naa aaye
+        //or agr kabhi remainder zero nhi aaya
+        //iska mtlb its a prime number
+        return true;
     }
 
     static void main() {
@@ -84,9 +105,14 @@ public class BasicMaths {
 //        System.out.println(revNum);
 
         // Palindrome number
-        int num = 1221;
-        boolean isPalindrome = isPalindrome(num);
-        System.out.println(isPalindrome);
+//        int num = 1221;
+//        boolean isPalindrome = isPalindrome(num);
+//        System.out.println(isPalindrome);
+
+        // prime number
+        int num = 3;
+        boolean result = isPrimeOrNot(num);
+        System.out.println("is it a prime number:" + " " + result);
 
 
     }
