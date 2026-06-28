@@ -141,6 +141,15 @@ public class BasicMaths {
 
     }
 
+    static void printAllPrimes(int n) {
+        for  (int num = 2; num <= n; num++) {
+            boolean isPrime = isPrimeOrNot(num);
+            if (isPrime==true) {
+                System.out.println(num);
+            }
+        }
+    }
+
     static void main() {
         //suppoose we need to get 5 from 57123 we use '%10'.
         // '%10' get any last digit form the number
@@ -194,7 +203,10 @@ public class BasicMaths {
 
         // find divisor or check perfect number
         // perfect no. - if sum of all divisors of a number is equal to that number then that is a perfect number
-        System.out.println(isPerfectNum(6));
+        //System.out.println(isPerfectNum(6));
+
+        // Print all primes
+        //printAllPrimes(10);
 
 
     }
