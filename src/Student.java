@@ -1,6 +1,7 @@
 //Class
 public class Student {
     static void main() {
+        //OOPS 1st file
 
         // OOPS developed to overcome traditional programming problems
         // Messy codes ko organise krte hai
@@ -21,11 +22,23 @@ public class Student {
         //Student A = new Student();
 
         //object Student
-        Student A = new Student();
-        A.id = 1;
-        A.age = 15;
-        A.name = "rohit";
-        A.nos = 5;
+//        Student A = new Student();
+//        A.id = 1;
+//        A.age = 15;
+//        A.name = "rohit";
+//        A.nos = 5;
+//        System.out.println(A.name);
+//        System.out.println(A.id);
+//        System.out.println(A.nos);
+//        System.out.println(A.age);
+//
+//        A.bunk();
+//        A.study();
+//        A.sleep();
+
+        //default ctor mai pahle empty class ka object banau and then uski attributes set kro but parameterised mai 1 hi step mai hojata ha
+        //parameterised ctor
+        Student A = new Student(1,12,"rohit",3);// ye value constructor ko bheji hai but set nhi kri attributes mai
         System.out.println(A.name);
         System.out.println(A.id);
         System.out.println(A.nos);
@@ -34,6 +47,10 @@ public class Student {
         A.bunk();
         A.study();
         A.sleep();
+
+
+
+
     }
 
     // attributes
@@ -47,6 +64,14 @@ public class Student {
         System.out.println("student default constructor called");
     }
 
+    // Parameterised ctor
+    public Student(int id, int age, String name, int nos) { //default becz there are no parameters in it
+        System.out.println("student default constructor called");
+        this.id = id;//right id is the const. id or parameters jinka naam change kr skte ha. left one is for attr.
+        this.age = age;
+        this.name = name;
+        this.nos = nos;
+    }
 
     //methods/ behaviors
     public void study() {
