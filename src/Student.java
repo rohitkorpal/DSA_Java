@@ -21,7 +21,7 @@ public class Student {
         //default ctor gives null value so it is less used
         //Student A = new Student();
 
-        //object Student
+        //object Student / default ctor
 //        Student A = new Student();
 //        A.id = 1;
 //        A.age = 15;
@@ -38,17 +38,26 @@ public class Student {
 
         //default ctor mai pahle empty class ka object banau and then uski attributes set kro but parameterised mai 1 hi step mai hojata ha
         //parameterised ctor
-        Student A = new Student(1,12,"rohit",3);// ye value constructor ko bheji hai but set nhi kri attributes mai
-        System.out.println(A.name);
-        System.out.println(A.id);
-        System.out.println(A.nos);
-        System.out.println(A.age);
+        Student A = new Student(1, 12, "rohit", 3);// ye value constructor ko bheji hai but set nhi kri attributes mai
+//        System.out.println(A.name);
+//        System.out.println(A.id);
+//        System.out.println(A.nos);
+//        System.out.println(A.age);
+//
+//        A.bunk();
+//        A.study();
+//        A.sleep();
 
-        A.bunk();
-        A.study();
-        A.sleep();
+        //copy constructor
+//        Student B = new Student(A);
+//        System.out.println(B.name);
+//        System.out.println(B.id);
+//        System.out.println(B.nos);
+//        System.out.println(B.age);
+//
+//        B.sleep();
 
-
+        // object life cycle
 
 
     }
@@ -66,11 +75,20 @@ public class Student {
 
     // Parameterised ctor
     public Student(int id, int age, String name, int nos) { //default becz there are no parameters in it
-        System.out.println("student default constructor called");
+        System.out.println("student parameterised constructor called");
         this.id = id;//right id is the const. id or parameters jinka naam change kr skte ha. left one is for attr.
         this.age = age;
         this.name = name;
         this.nos = nos;
+    }
+
+    //Copy const
+    public Student(Student srcobj) { // srcobj --> A
+        System.out.println("student copy constructor called");
+        this.id = srcobj.id; // "this" underconstruction object ka lia hota hai jo create ho rhe hai abhi
+        this.age = srcobj.age;
+        this.name = srcobj.name;
+        this.nos = srcobj.nos;
     }
 
     //methods/ behaviors
