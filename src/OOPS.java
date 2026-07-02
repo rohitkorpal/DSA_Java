@@ -15,6 +15,8 @@ public class OOPS {
         // class is just describing common structure and behavior
         // classes and object are fundamental building blocks of the OOP concept
 
+        // EX- Student class
+
 
     }
 }
