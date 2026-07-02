@@ -11,8 +11,10 @@ public class OOPS {
         // "behavior" is methods/functions that an object can perform
         // object is an instance of class. ie object is created from a class
         // every object from a same class has same properties
-        // when a object is created then only system allocates RAM to the class
+        // when an object is created then only system allocates RAM to the class
         // class is just describing common structure and behavior
+        // classes and object are fundamental building blocks of the OOP concept
+
 
     }
 }
