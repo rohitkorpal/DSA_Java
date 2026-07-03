@@ -40,6 +40,21 @@ public class Encapsulation {
     private int nos;
     private String gf;
 
+    //GETTER FOR FETCHING PRIVATE ATTRIBUTE
+    public String getName(){
+        return this.name;
+    }
+    public int getAge(){
+        return this.age;
+    }
+    public void setAge(int age){
+        // extra layer of authentication
+        if (age<100)
+            this.age = age;
+        return;
+    }
+
+
 
     public Encapsulation(int id, int age, String name, int nos, String gf) { //default becz there are no parameters in it
         System.out.println("student parameterised constructor called");
