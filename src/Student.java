@@ -1,4 +1,4 @@
-//Class
+//Class and Object
 public class Student {
     static void main() {
         //OOPS 1st file
@@ -58,7 +58,9 @@ public class Student {
 //        B.sleep();
 
         // object life cycle
-
+        Student B = new Student(1, 12, "rohit", 3);
+        Student C = new Student(1, 12, "rohit", 3);
+        Student D = new Student(1, 12, "rohit", 3);
 
     }
 
