@@ -9,6 +9,8 @@ public class Inheritance {
         // hierarchial - single parent multiple child class
         // multiple - a child class made from 2 parent,does not exist in java
         // hybrid - hierarchial + multiple
+        // advantages- code modification , reusability, extensibility, data hiding
+
 
     }
 }
