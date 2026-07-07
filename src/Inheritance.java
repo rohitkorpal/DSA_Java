@@ -10,7 +10,11 @@ public class Inheritance {
         // multiple - a child class made from 2 parent,does not exist in java
         // hybrid - hierarchial + multiple
         // advantages- code modification , reusability, extensibility, data hiding
-
+        // interfaces are used to implement multiple inheritance, they are methods without bodies.
+        // EG
+        // interface teamlead{
+        // void teamlead()
+        // }
 
     }
 }
