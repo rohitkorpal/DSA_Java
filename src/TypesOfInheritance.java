@@ -22,33 +22,37 @@ class Employee {
     }
 }
 
-class SalesManager extends Employee {
-    SalesManager(String name, int id, double salary) {
-        super(name, id, salary);
-    }
+interface SalesManager {
 
-    void boostSales() {
-        System.out.println("Boosting Sales");
-    }
+    void boostSales();
+
 }
 
 class MarketingManager extends Employee {
+
     MarketingManager(String name, int id, double salary) {
         super(name, id, salary);
     }
 
     void createMarketingStrategy() {
-        System.out.println("Marketing Strategy Created");
+        System.out.println(name + " created a marketing strategy.");
     }
 }
 
-class BusinessDevelopmentManager extends MarketingManager {
+class BusinessDevelopmentManager extends MarketingManager
+        implements SalesManager {
+
     BusinessDevelopmentManager(String name, int id, double salary) {
         super(name, id, salary);
     }
 
+    @Override
+    public void boostSales() {
+        System.out.println(name + " is boosting sales.");
+    }
+
     void createBusinessDeal() {
-        System.out.println("Business Deal Created");
+        System.out.println(name + " created a business deal.");
     }
 }
 
@@ -121,31 +125,30 @@ public class TypesOfInheritance {
 
     public static void main(String[] args) {
 
-        SalesManager sm = new SalesManager("Rohit",101,50000);
-        sm.display();
-        sm.boostSales();
 
         BusinessDevelopmentManager bdm =
-                new BusinessDevelopmentManager("Amit",102,60000);
+                new BusinessDevelopmentManager("Rohit", 101, 60000);
+
         bdm.display();
         bdm.createMarketingStrategy();
+        bdm.boostSales();
         bdm.createBusinessDeal();
 
-        CEO ceo = new CEO("Raj",103,200000);
+        CEO ceo = new CEO("Raj", 103, 200000);
         ceo.display();
         ceo.executiveDecision();
         ceo.leadCompany();
 
-        Developer dev = new Developer("Priya",104,70000);
+        Developer dev = new Developer("Priya", 104, 70000);
         dev.display();
         dev.writeCode();
 
-        HRDirector hr = new HRDirector("Neha",105,90000);
+        HRDirector hr = new HRDirector("Neha", 105, 90000);
         hr.display();
         hr.recruit();
         hr.manageHR();
 
-        TechLead tl = new TechLead("Vikas",106,95000);
+        TechLead tl = new TechLead("Vikas", 106, 95000);
         tl.display();
         tl.manageProject();
         tl.leadTeam();
