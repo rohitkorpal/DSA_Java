@@ -9,7 +9,11 @@ public class Car extends Vehicle {
         super(name, model, noOfTyres); // super is called first in the constructor
         this.noOfDoors = noOfDoors;
         this.transmissionType = transmissionType;
+        super.StartEngine();
     }
 
+    public void startAc(){
+        System.out.println("Starting Ac of :" + name);
+    }
 
 }
