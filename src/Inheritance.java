@@ -16,5 +16,8 @@ public class Inheritance {
         // void teamlead()
         // }
 
+        // allows a class to reuse properties and behaviors of another class.
+        //It helps in building a relationship between classes and promotes code reusability.
+
     }
 }
