@@ -6,24 +6,23 @@ public class Polymorphism {
 
         //Types - compile time polymorphism aka static poly, runtime poly
 
-        // static - method overloading and operator overloading
+        // # static - method overloading and operator overloading
 
         // 1- method overloading -when a class contain multiple method sharing a same name
         // but different in arguement types.
         // eg-
-        Polymorphism obj = new Polymorphism();
+//        Polymorphism obj = new Polymorphism();
+//
+//        System.out.println(obj.add(10, 20));        // 30
+//        System.out.println(obj.add(10, 20, 30));    // 60
+//        System.out.println(obj.add(10.5, 20.5));    // 31.0
 
-        System.out.println(obj.add(10, 20));        // 30
-        System.out.println(obj.add(10, 20, 30));    // 60
-        System.out.println(obj.add(10.5, 20.5));    // 31.0
+        // # operator overloading - java does not support user defined operator overloading but internally
+        // overloads certain operators (eg, + for string conctenates but for inter addition)
 
 
     }
 
-    // method with float
-    double add ( double a, double b){
-        return a + b;
-    }
 
     // Method with 2 integers
     int add ( int a, int b){
@@ -34,6 +33,12 @@ public class Polymorphism {
     int add ( int a, int b, int c){
         return a + b + c;
     }
+
+    // method with double
+    double add ( double a, double b){
+        return a + b;
+    }
+
 
 
 
