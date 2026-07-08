@@ -17,9 +17,12 @@ public class Polymorphism {
 //        System.out.println(obj.add(10, 20, 30));    // 60
 //        System.out.println(obj.add(10.5, 20.5));    // 31.0
 
-        // # operator overloading - java does not support user defined operator overloading but internally
-        // overloads certain operators (eg, + for string conctenates but for inter addition)
-
+        // 2- operator overloading - java does not support user defined operator overloading but internally
+        // overloads certain operators (eg, + for string concatenates but for inter addition, we can't overload + ourself)
+        // The only operator overloaded in Java is +.
+//        System.out.println(10 + 20);          // 30
+//        System.out.println("10" + "20");      // 1020
+//        System.out.println("Age: " + 20);     // Age: 20
 
     }
 
