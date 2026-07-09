@@ -10,6 +10,7 @@ public class Polymorphism {
 
         // 1- method overloading -when a class contain multiple method sharing a same name
         // but different in arguement types.
+
         // eg-
 //        Polymorphism obj = new Polymorphism();
 //
@@ -20,11 +21,21 @@ public class Polymorphism {
         // 2- operator overloading - java does not support user defined operator overloading but internally
         // overloads certain operators (eg, + for string concatenates but for inter addition, we can't overload + ourself)
         // The only operator overloaded in Java is '+'.
+
 //        System.out.println(10 + 20);          // 30
 //        System.out.println("10" + "20");      // 1020
 //        System.out.println("Age: " + 20);     // Age: 20
 
+        // # Runtime polymorphism
+        // Function Overriding = a subclass can provide a specific implementation of a method that is already defined in
+        // its superclass
+
+        // dYNAMIC method dispatch(upcasting) - a superclass ref variable can refer to subclass object and dynamic dispatch
+        // is used to dispacth is used to resolve the called method at runtime
+
+
     }
+
 
 
     // Method with 2 integers
@@ -47,4 +58,3 @@ public class Polymorphism {
 
 
 }
-
