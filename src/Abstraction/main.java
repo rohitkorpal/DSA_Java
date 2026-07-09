@@ -115,6 +115,10 @@ interface Bird {
     void fly();
 
     void eat();
+
+    default void sleep() { // this method helps creating fnc in interface.zruri nhi implement class ko ye dena
+        System.out.println("Bird is sleeping");
+    }
 }
 
 class sparrow implements Bird { // yaha pe un functions ko implement krega override krke
@@ -148,13 +152,14 @@ public class main {
     public static void main(String[] args) {
 
         doBirdStuff(new sparrow());
-        doBirdStuff(new crow());
+        //doBirdStuff(new crow());
 
     }
 
     public static void doBirdStuff(Bird b) {
         b.eat();
         b.fly();
+        b.sleep();
     }
 
 }
