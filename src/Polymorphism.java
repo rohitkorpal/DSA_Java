@@ -33,9 +33,9 @@ public class Polymorphism {
 
         // # Runtime polymorphism
 
-        // Function Overriding = a subclass can provide a specific implementation of a method that is already defined in
+        // 1- Function Overriding = a subclass can provide a specific implementation of a method that is already defined in
         // its superclass
-        // dYNAMIC method dispatch(upcasting) - a superclass ref variable can refer to subclass object and dynamic dispatch
+        // 2- dYNAMIC method dispatch(upcasting) - a superclass ref variable can refer to subclass object and dynamic dispatch
         // is used to dispacth is used to resolve the called method at runtime
         circle c = new circle();
         //c.draw();
