@@ -31,13 +31,20 @@ public class main {
         //Interface: An interface is a reference type in Java that is similar to a class and is a collection of abstract methods.
         //--A class implements an interface, thereby inheriting the abstract methods of the interface.
 
-        BMW car = new BMW();
+        //BMW car = new BMW();
 
         // User sirf method call karta hai
-        car.startEngine();
+        //car.startEngine();
 
         // User ko andar kya process ho raha hai
         // uski details pata hone ki zarurat nahi.
+
+        //Abstraction using classes- access specifiers
+
+        //Abstract class - a class whose object can not be created and is designed to be subclassed, serves as a superclass for other classes to extend and implement its abstract methods, providing a blueprint for derived classes to follow.
+        // acts as a template for subclasses
+
+
 
     }
 
