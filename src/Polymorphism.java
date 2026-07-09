@@ -55,6 +55,7 @@ public class Polymorphism {
     }
 
     // Upcasting - dynamic selection of class and attributes
+    // ek fnc banaya usma parent ka object dedia jo hold krega apna saare childs ko aur relevant method ko call krega
     public static void doDrawingStuff(shape s){
         s.draw();// polymorphic
 
