@@ -21,7 +21,6 @@ class BMW extends Car {
 }
 abstract class Bird { // yaha pe class ka structure banayega bs
     abstract void fly();// declared here
-
     abstract void eat();
     abstract void sleep();
 }
@@ -82,16 +81,25 @@ public class main {
         //Abstract class - a class whose object can not be created and is designed to be subclassed, serves as a superclass for other classes to extend and implement its abstract methods, providing a blueprint for derived classes to follow.
         // acts as a template for subclasses
 
-        Bird b= new sparrow();
-        b.eat();
-        b.fly();
-        b.sleep();
 
-        b = new crow();
+//        Bird b= new sparrow();
+//        b.eat();
+//        b.fly();
+//        b.sleep();
+//
+//        b = new crow();
+//        b.eat();
+//        b.fly();
+//        b.sleep();
+        doBirdStuff(new sparrow());
+        doBirdStuff(new crow());
+
+    }
+
+    public static void doBirdStuff(Bird b){
         b.eat();
         b.fly();
         b.sleep();
     }
-
 
 }
