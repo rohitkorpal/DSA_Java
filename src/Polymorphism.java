@@ -1,4 +1,5 @@
 import polymorphism.circle;
+import polymorphism.rect;
 
 public class Polymorphism {
     static void main() {
@@ -36,6 +37,9 @@ public class Polymorphism {
         // is used to dispacth is used to resolve the called method at runtime
         circle c = new circle();
         c.draw();
+
+        rect r = new rect();
+        r.draw();
     }
 
 
