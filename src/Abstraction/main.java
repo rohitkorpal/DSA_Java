@@ -22,7 +22,9 @@
 //abstract class Bird { // yaha pe class ka structure banayega bs
 //    abstract void fly();// declared here
 //    abstract void eat();
-//    abstract void sleep();
+//    public void sleep(){ //concrete method and when we call it in sparrow or crow it will come automatically. no need to write in sparrow or crow class
+//        System.out.println("sleeping");
+//    }
 //}
 //
 //class sparrow extends Bird { // yaha pe un functions ko implement krega override krke
@@ -113,7 +115,6 @@ interface Bird {
     void fly();
 
     void eat();
-
 }
 
 class sparrow implements Bird { // yaha pe un functions ko implement krega override krke
