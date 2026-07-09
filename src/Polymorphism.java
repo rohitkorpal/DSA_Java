@@ -1,7 +1,9 @@
+import polymorphism.circle;
+
 public class Polymorphism {
     static void main() {
         // has many forms
-        // abiltiy of a single function or operator to work in diff ways based on object it is acting upon
+        // ability of a single function or operator to work in diff ways based on object it is acting upon
         // helps an object to take multiple forms
 
         //Types - compile time polymorphism aka static poly, runtime poly
@@ -27,13 +29,13 @@ public class Polymorphism {
 //        System.out.println("Age: " + 20);     // Age: 20
 
         // # Runtime polymorphism
+
         // Function Overriding = a subclass can provide a specific implementation of a method that is already defined in
         // its superclass
-
         // dYNAMIC method dispatch(upcasting) - a superclass ref variable can refer to subclass object and dynamic dispatch
         // is used to dispacth is used to resolve the called method at runtime
-
-
+        circle c = new circle();
+        c.draw();
     }
 
 
