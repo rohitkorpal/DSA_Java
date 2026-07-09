@@ -1,5 +1,7 @@
 import polymorphism.circle;
 import polymorphism.rect;
+import polymorphism.shape;
+
 
 public class Polymorphism {
     static void main() {
@@ -36,13 +38,21 @@ public class Polymorphism {
         // dYNAMIC method dispatch(upcasting) - a superclass ref variable can refer to subclass object and dynamic dispatch
         // is used to dispacth is used to resolve the called method at runtime
         circle c = new circle();
-        c.draw();
-
+        //c.draw();
+        //doDrawingStuff(c);
+        //doDrawingStuff(new shape());
+        // we created for shape s but passed c and it run without error becz parent can hold the child class and its methods
         rect r = new rect();
-        r.draw();
+        //r.draw();
+        //doDrawingStuff(r);
+        shape s = new shape();
+        //doDrawingStuff(s);
     }
 
-
+    // Upcasting
+    public static void doDrawingStuff(shape s){
+        s.draw();
+    }
 
     // Method with 2 integers
     int add ( int a, int b){
