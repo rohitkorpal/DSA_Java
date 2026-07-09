@@ -45,13 +45,21 @@ public class Polymorphism {
         rect r = new rect();
         //r.draw();
         //doDrawingStuff(r);
+
         shape s = new shape();
         //doDrawingStuff(s);
+
+        // downcasting
+        circle c1 = new circle();
+        //doDrawingStuff(c1);
     }
 
-    // Upcasting
+    // Upcasting - dynamic selection of class and attributes
     public static void doDrawingStuff(shape s){
-        s.draw();
+        s.draw();// polymorphic
+
+        circle c1= (circle)s; //DOWNCASTING
+        c1.draw();
     }
 
     // Method with 2 integers
