@@ -19,6 +19,44 @@ class BMW extends Car {
         System.out.println("Starting Engine...");
     }
 }
+abstract class Bird { // yaha pe class ka structure banayega bs
+    abstract void fly();// declared here
+
+    abstract void eat();
+    abstract void sleep();
+}
+
+class sparrow extends Bird { // yaha pe un functions ko implement krega override krke
+
+    @Override
+    void fly() {
+        System.out.println("sparrow is flying");
+    }
+
+    @Override
+    void eat() {
+        System.out.println("sparrow is eating");
+    }
+    void sleep() {
+        System.out.println("sleeping");
+    }
+}
+
+class crow extends Bird { // yaha pe un functions ko implement krega override krke
+
+    @Override
+    void fly() {
+        System.out.println("crow is flying");
+    }
+
+    @Override
+    void eat() {
+        System.out.println("crow is eating");
+    }
+    void sleep() {
+        System.out.println("sleeping");
+    }
+}
 
 public class main {
     public static void main(String[] args) {
@@ -39,13 +77,20 @@ public class main {
         // User ko andar kya process ho raha hai
         // uski details pata hone ki zarurat nahi.
 
-        //Abstraction using classes- access specifiers
+        //Abstraction using classes - access specifiers
 
         //Abstract class - a class whose object can not be created and is designed to be subclassed, serves as a superclass for other classes to extend and implement its abstract methods, providing a blueprint for derived classes to follow.
         // acts as a template for subclasses
 
+        Bird b= new sparrow();
+        b.eat();
+        b.fly();
+        b.sleep();
 
-
+        b = new crow();
+        b.eat();
+        b.fly();
+        b.sleep();
     }
 
 
