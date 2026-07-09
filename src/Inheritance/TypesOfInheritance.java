@@ -1,3 +1,5 @@
+package Inheritance;
+
 interface ProjectManager {
     void manageProject();
 }
@@ -62,7 +64,7 @@ class Executive extends Employee {
     }
 
     void executiveDecision() {
-        System.out.println("Executive Decision Taken");
+        System.out.println("Inheritance.Executive Decision Taken");
     }
 }
 

@@ -18,10 +18,10 @@ This repository contains my solutions and implementations of Data Structures and
 - Pattern Solving
 - Taking Input
 - Variables
-- Encapsulation
-- Inheritance
-- Types of Inheritance
-- Polymorphism
+- Encapsulation.Encapsulation
+- Inheritance.Inheritance
+- Types of Inheritance.Inheritance
+- polymorphism.Polymorphism
 
 ## Goal
 Consistent DSA practice for placements and problem-solving improvement.

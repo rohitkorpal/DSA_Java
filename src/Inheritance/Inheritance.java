@@ -1,3 +1,5 @@
+package Inheritance;
+
 public class Inheritance {
     static void main() {
         //inheritance  is "IS-A" relationship

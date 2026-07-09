@@ -1,4 +1,4 @@
-import java.security.PrivateKey;
+package Encapsulation;
 
 public class Encapsulation {
     static void main() {
@@ -22,7 +22,7 @@ public class Encapsulation {
         System.out.println(A.age);
 
         A.bunk();
-        A.gfchatting(); //working test.java mai hai
+        A.gfchatting(); //working Encapsulation.test.java mai hai
     }
 
 

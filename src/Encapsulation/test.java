@@ -1,3 +1,5 @@
+package Encapsulation;
+
 public class test {
     static void main() {
         Encapsulation A = new Encapsulation(1,12,"rahul",3,"mansi");

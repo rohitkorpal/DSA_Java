@@ -1,6 +1,4 @@
-import polymorphism.circle;
-import polymorphism.rect;
-import polymorphism.shape;
+package polymorphism;
 
 
 public class Polymorphism {
@@ -17,7 +15,7 @@ public class Polymorphism {
         // but different in arguement types.
 
         // eg-
-//        Polymorphism obj = new Polymorphism();
+//        polymorphism.Polymorphism obj = new polymorphism.Polymorphism();
 //
 //        System.out.println(obj.add(10, 20));        // 30
 //        System.out.println(obj.add(10, 20, 30));    // 60
@@ -35,6 +33,7 @@ public class Polymorphism {
 
         // 1- Function Overriding = a subclass can provide a specific implementation of a method that is already defined in
         // its superclass
+
         // 2- dYNAMIC method dispatch(upcasting) - a superclass ref variable can refer to subclass object and dynamic dispatch
         // is used to dispacth is used to resolve the called method at runtime
         circle c = new circle();
