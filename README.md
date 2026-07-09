@@ -4,15 +4,24 @@ This repository contains my solutions and implementations of Data Structures and
 
 ## Topics Covered
 - Arrays
+- Array Homeworks
 - Strings
+- String Homeworks
+- Basics
+- Basic Maths
 - Conditionals
 - Datatypes
 - Loops
+- Loop Homeworks
 - Methods
 - Operators
-- PatternSolving
-- TakingInput
+- Pattern Solving
+- Taking Input
 - Variables
+- Encapsulation
+- Inheritance
+- Types of Inheritance
+- Polymorphism
 
 ## Goal
 Consistent DSA practice for placements and problem-solving improvement.
