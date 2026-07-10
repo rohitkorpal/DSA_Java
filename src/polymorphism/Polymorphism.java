@@ -7,12 +7,12 @@ public class Polymorphism {
         // ability of a single function or operator to work in diff ways based on object it is acting upon
         // helps an object to take multiple forms
 
-        //Types - compile time polymorphism aka static poly, runtime poly
+        //Types - compile time polymorphism aka static poly, runtime poly aka dynamic polymorphism 
 
         // # static - method overloading and operator overloading
 
         // 1- method overloading -when a class contain multiple method sharing a same name
-        // but different in arguement types.
+        // but different in arguement types/Parameters.
 
         // eg-
 //        polymorphism.Polymorphism obj = new polymorphism.Polymorphism();
