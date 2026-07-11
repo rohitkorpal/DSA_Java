@@ -1,6 +1,5 @@
 package polymorphism;
 
-
 public class Polymorphism {
     static void main() {
         // has many forms
