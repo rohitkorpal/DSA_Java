@@ -2,6 +2,9 @@ package Encapsulation;
 
 public class Encapsulation {
     static void main() {
+        // Encapsulation is the practice of making class variables private and providing controlled access to them through public methods (getters and setters).
+        // This prevents direct access to an object's internal state and protects it from unintended or invalid modifications
+
         // binds data and methods in a class
         // like a capsule it combines and binds them together
         // functions
