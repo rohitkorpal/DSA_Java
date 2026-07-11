@@ -31,7 +31,8 @@ public class Polymorphism {
         // # Runtime polymorphism
 
         // 1- Function Overriding = a subclass can provide a specific implementation of a method that is already defined in
-        // its superclass
+        // its superclass. Method overriding means that a child class defines a method with the same name and same parameters as a
+        // method in the parent class. When the method is called, Java decides at runtime which version to execute based on the actual object, not the reference type.
 
         // 2- dYNAMIC method dispatch(upcasting) - a superclass ref variable can refer to subclass object and dynamic dispatch
         // is used to dispacth is used to resolve the called method at runtime
@@ -77,7 +78,8 @@ public class Polymorphism {
     }
 
 
-
-
+    // Overloading vs Overriding
+    // 1- Method Overloading happens within the same class, uses the same method name but different parameters, and is resolved at compile time.
+    // 2- Method Overriding happens between a parent class and a child class, uses the same method name and same parameters, and is resolved at runtime.
 
 }
