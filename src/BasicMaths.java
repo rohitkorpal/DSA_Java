@@ -228,6 +228,18 @@ public class BasicMaths {
 //            System.out.println("Odd");
 //        }
 
+        // factorial
+        // n! = n × (n-1) × (n-2) × ... × 1
+//        int n=5;
+//        int fact = 1;
+//
+//        for (int i=1;i<=n;i++){
+//            fact = fact * i;
+//        }
+//        System.out.println("Factorial of " + n + " is: " + fact);
+
+
+
 
 
 
