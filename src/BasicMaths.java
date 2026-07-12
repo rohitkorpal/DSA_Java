@@ -227,5 +227,11 @@ public class BasicMaths {
 //        }else {
 //            System.out.println("Odd");
 //        }
+
+
+
+
+
+
     }
 }
