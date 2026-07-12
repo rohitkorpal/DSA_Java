@@ -7,6 +7,7 @@ public class Student {
         //1. State (variables/fields)
         //2. Behavior (methods/functions)
 
+
         // What is an Object?
         // An object is an instance of a class. When an object is created, memory is allocated, and it can use the properties and behaviors defined in the class.
         //A class doesn’t occupy memory until an object is created.

@@ -151,8 +151,9 @@ public class BasicMaths {
     }
 
     static void main() {
-        //suppoose we need to get 5 from 57123 we use '%10'.
-        // '%10' get any last digit form the number
+        // most imp concept
+        //suppose we need to get 5 from 57123 we use '%10'.
+        // '%10' get any last digit form the number,'%' it gives the remainder
         // '/10' to remove it after '%10' operation
 
         //int n= 53127; //%10 gives 7 as the remainder
@@ -208,6 +209,23 @@ public class BasicMaths {
         // Print all primes
         //printAllPrimes(10);
 
+        // count digits in a number
+//        int n = 12345;
+//        int count = 0;
+//
+//        while (n > 0) {
+//            n = n / 10;
+//            count++;
+//        }
+//
+//        System.out.println("Number of digits = " + count);
 
+        //odd or even
+//        int n= 7;
+//        if (n%2==0){
+//            System.out.println("Even");
+//        }else {
+//            System.out.println("Odd");
+//        }
     }
 }
