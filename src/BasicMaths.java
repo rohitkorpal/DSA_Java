@@ -238,6 +238,30 @@ public class BasicMaths {
 //        }
 //        System.out.println("Factorial of " + n + " is: " + fact);
 
+        // power of a number
+//        int a = 2;
+//        int b = 5;
+//        int ans =1;
+//
+//        for (int i=1; i<=b; i++){
+//            ans = ans * a;
+//        }
+//        System.out.println("Power of " + a + " raised to " + b + " is: " + ans);
+
+        // count number of even
+        int n= 123456;
+        int count = 0;
+
+        while(n>0){
+            int digit = n % 10;
+
+            if(digit%2==0){
+                count++;
+            }
+            n=n/10;
+        }
+        System.out.println("Number of even digits = " + count);
+
 
 
 
