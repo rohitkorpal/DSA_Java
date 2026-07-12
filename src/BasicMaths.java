@@ -263,13 +263,5 @@ public class BasicMaths {
 //        System.out.println("Number of even digits = " + count);
 
 
-
-
-
-
-
-
-
-
     }
 }
