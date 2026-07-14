@@ -13,5 +13,8 @@ public class TimeComplexity {
     // Theta Θ --> average case --> no. of comparison in average case is 'n/2' comparison --> Θ(n)
     // Omega Ω --> best case / lower bound --> no. of comparison in best case is '1' comparison --> Ω(1)
 
+    // ignore constants
+    // O (2n) --> O (N)
+
 
 }
