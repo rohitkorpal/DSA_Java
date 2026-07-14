@@ -5,4 +5,9 @@ public class TimeComplexity {
     //space complexity is measured in terms of big O notation
     //time complexity is measured in terms of number of operations performed by our program
 
+    // Big O --> worst case / upper bound
+    // Theta Θ --> average case
+    // Omega Ω --> best case / lower bound
+
+
 }
