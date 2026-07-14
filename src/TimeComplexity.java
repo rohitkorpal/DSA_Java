@@ -6,7 +6,7 @@ public class TimeComplexity {
     //time complexity is measured in terms of number of operations performed by our program
 
     // time and space complexity order
-    // [Smallest] O(1) < O(logn) < O ( Sqrt n) < O (n) < O (nlogn) < O (n^2) < O (n^3) < O (2^n) < O (n!) < O (n^n) [Biggest]
+    // [Smallest] O(1) < O (logn) < O ( Sqrt n) < O (n) < O (nlogn) < O (n^2) < O (n^3) < O (2^n) < O (n!) < O (n^n) [Biggest]
 
     // Big O --> worst case / upper bound --> no. of comparison in worst case is 'n' comparison --> O(n)
     // Theta Θ --> average case --> no. of comparison in average case is 'n/2' comparison --> Θ(n)
@@ -17,6 +17,12 @@ public class TimeComplexity {
 
     //space complexity of variables is constant chahe kitna bhi banao ie O(1)
 
+    //Qyestions
+    //1. O(n)
+    //2. O(n^2)
+    //3. O(logn)
+    //4. O(n*m)
+    //5. O(n)
 
 
 }
