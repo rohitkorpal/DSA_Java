@@ -16,5 +16,8 @@ public class TimeComplexity {
     // ignore constants
     // O (2n) --> O (N)
 
+    //space complexity of variables is constant chahe kitna bhi banao ie O(1)
+
+
 
 }
