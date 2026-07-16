@@ -78,6 +78,31 @@ public class TimeComplexity {
     // for (j = 0; j < n; j++)
     // --> O(n + n) = O(n)
 
+    // 5.  Condition-Based Loops
+    // for (int i = 1; i < n; i *= 2)
+    // -> O(log n)
+
+    // Practice Problems
+
+    // 1
+    // for (int i = 0; i < n; i++) {
+    //    System.out.println(i);
+    //}
+    // -> O(n) ; run n times
+
+    // 2
+    //for (int i = 0; i < n; i++) {
+    //    for (int j = 0; j < n; j++) {
+    //        System.out.println(i + j);
+    //    }
+    //}
+    // -> O(n²) ; run n*n times
+
+    // 3
+    //for (int i = 0; i < n/2; i++) {
+    //    System.out.println(i);
+    //}
+    // -> O(n) ; run n/2 times -> ignore constant
 
 
     //Qyestions
