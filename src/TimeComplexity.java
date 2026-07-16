@@ -64,6 +64,19 @@ public class TimeComplexity {
     //}
     // -> O(2n) = O(n)
 
+    // 2. drop lower terms
+    // O(n² + n) = O(n²)
+    // -> Only highest term matters
+
+    // 3. Nested Loops Multiply
+    // for (i = 0; i < n; i++)
+    //     for (j = 0; j < n; j++)
+    // -> O(n × n) = O(n²)
+
+    // 4. Separate Loops Add
+    // for (i = 0; i < n; i++)
+    // for (j = 0; j < n; j++)
+    // --> O(n + n) = O(n)
 
 
 
