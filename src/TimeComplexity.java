@@ -5,6 +5,12 @@ public class TimeComplexity {
     //space complexity is measured in terms of big O notation
     //time complexity is measured in terms of number of operations performed by our program
 
+    // Time Complexity measures: How the number of operations grows with input size
+    //  It does NOT measure actual time (seconds)
+    //-> It measures growth of operations
+
+    // Space Complexity measures: How much extra memory your program uses
+
     // time and space complexity order
     // [Smallest] O(1) < O (logn) < O ( Sqrt n) < O (n) < O (nlogn) < O (n^2) < O (n^3) < O (2^n) < O (n!) < O (n^n) [Biggest]
 
