@@ -121,6 +121,82 @@ public class TimeComplexity {
     // int a = 10;
     // -> uses constant memory space, so O(1)
 
+    // eg2
+    // int[] arr = new int[n];
+    // -> uses linear memory space, so O(n)
+
+    //eg3
+    //int[][] matrix = new int[n][n];
+    //-> n*n = O(n^2)
+
+    // Auxiliary Space - Extra space used apart from input.
+    //int sum = 0; ->O(1)
+
+    //Combined Example
+    //int[] arr = new int[n];
+    //input space → O(n)
+    //extra space → O(1)
+
+    //Time vs Space Tradeoff
+    //Sometimes:
+    //-> Faster code uses more memory
+    //-> Less memory uses more time
+    //Example:
+    //brute force → slow, less memory
+    //optimized → fast, more memory
+
+    // Basic Question
+    // 1 - for (int i = 0; i < n; i++)
+    // O(n)
+
+    //2-for (int i = 0; i < n; i++)
+    //    for (int j = 0; j < i; j++)
+    // O(n^2)
+
+    //3- for (int i = n; i > 0; i /= 2)
+    // O(logn)
+
+    //4- for (int i = 0; i < n; i++)
+    //    for (int j = 0; j < m; j++)
+    // O(n*m)
+
+    //5- int[] arr = new int[n];
+    // O(n)
+
+    //Intermediate Level
+    //6-for (int i = 0; i < n; i++)
+    //    for (int j = 0; j < n; j += 2)
+    // O(n^2)
+
+    //7-for (int i = 1; i < n; i *= 3)
+    // O(log_3(n)) == O(logn)
+
+    //8-for (int i = 0; i < n; i++) {
+    //    System.out.println(i);
+    //}
+    //for (int j = 0; j < n; j++) {
+    //    System.out.println(j);
+    //}
+    // O(n) >== O(n)+O(n)
+
+    //9- for (int i = 0; i < n; i++)
+    //    for (int j = i; j < n; j++)
+    //   O(n^2)
+
+    //10-for (int i = 0; i < n; i++) {
+    //    for (int j = 0; j < i; j++) {
+    //        for (int k = 0; k < j; k++) {
+    //            System.out.println(i + j + k);
+    //        }
+    //    }
+    //}
+//    //O(n^3)
+//    Shortcut to remember
+//    Two dependent loops (i, j) → O(n²).
+//    If a third dependent loop depends on j, it adds another level, making it O(n³).
+
+
+
 
 
     //Qyestions
