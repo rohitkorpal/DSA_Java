@@ -195,9 +195,54 @@ public class TimeComplexity {
 //    Two dependent loops (i, j) → O(n²).
 //    If a third dependent loop depends on j, it adds another level, making it O(n³).
 
+    //Advanced Thinking Level
+    //11-int i = 0;
+    //while (i < n) {
+    //    i += 2;
+    //}
+    //O(n)
 
+    //12- int i = 1;
+    //while (i < n) {
+    //    i *= 2;
+    //}
+    //O(logn)
 
+    //13- for (int i = 0; i < n; i++) {
+    //    i++;
+    //}
+    //O(n)
 
+    //14-for (int i = 0; i < n; i++) {
+    //    for (int j = 0; j < Math.sqrt(n); j++) {
+    //        System.out.println(i + j);
+    //    }
+    //}
+    //O(n * sqrt(n)) == O(n^(3/2))
+
+    //15-for (int i = 0; i < n; i++) {
+    //    if (i % 2 == 0) {
+    //        System.out.println(i);
+    //    }
+    //}
+    //O(n)
+
+    //Space Complexity Practice
+    //16- int x= 10;
+    // O(1)
+
+    //17-int[]arr=new int[n]
+    // O(n)
+
+    //18-int[][] matrix = new int[n][n];
+    //O(n^2)
+
+    //19-int[] a = new int[n];
+    //int[] b = new int[n];
+    //O(n)
+
+    //20-int[][] grid = new int[n][m];
+    //O(n*m)
 
     //Qyestions
     //1. O(n)
