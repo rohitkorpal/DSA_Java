@@ -244,12 +244,4 @@ public class TimeComplexity {
     //20-int[][] grid = new int[n][m];
     //O(n*m)
 
-    //Qyestions
-    //1. O(n)
-    //2. O(n^2)
-    //3. O(logn)
-    //4. O(n*m)
-    //5. O(n)
-
-
 }
