@@ -104,6 +104,23 @@ public class TimeComplexity {
     //}
     // -> O(n) ; run n/2 times -> ignore constant
 
+    // 4
+    //for (int i = 0; i < n; i += 2)
+    // -> runs n/2 times so == O(n)
+
+    //5
+    //for (int i = 1; i < n; i *= 2)
+    // -> runs logn times so == O(logn)
+
+    //SPACE COMPLEXITY
+
+    // It refers to the total amount of memory used by an algorithm.
+    // It includes both the space used by the input and any additional space used by the algorithm.
+
+    //EG1
+    // int a = 10;
+    // -> uses constant memory space, so O(1)
+
 
     //Qyestions
     //1. O(n)
