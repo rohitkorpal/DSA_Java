@@ -39,6 +39,10 @@ public class JavaCollectionFramework {
         //size
         System.out.println(list.size());
 
+        System.out.println("printing list 2:"+list2);
+        list2.clear();
+        System.out.println(list2.size());
+
 
 //        List<Integer> list = new ArrayList<>();
 //        Collection<Integer> collection = new ArrayList<>();
