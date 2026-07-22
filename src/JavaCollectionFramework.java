@@ -19,6 +19,18 @@ public class JavaCollectionFramework {
         list.add(60);
         System.out.println(list);
 
+        //remove
+        list.remove(0);
+        System.out.println(list);
+
+        //addAll method
+        List<Integer> list2 = new ArrayList<>();
+        list2.add(101);
+        list2.add(102);
+
+        list.addAll(list2);
+        System.out.println(list);
+
 //        List<Integer> list = new ArrayList<>();
 //        Collection<Integer> collection = new ArrayList<>();
 
