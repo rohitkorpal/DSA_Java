@@ -4,6 +4,7 @@ public class JavaCollectionFramework {
     static void main() {
         // list or collection -> interface -> object creation not possible
 
+        
 
     }
 }
