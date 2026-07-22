@@ -18,6 +18,7 @@ public class JavaCollectionFramework {
         System.out.println(list);
         list.add(60);
         System.out.println(list);
+
 //        List<Integer> list = new ArrayList<>();
 //        Collection<Integer> collection = new ArrayList<>();
 
