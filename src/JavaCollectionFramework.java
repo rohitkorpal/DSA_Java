@@ -55,9 +55,14 @@ public class JavaCollectionFramework {
         list3.add(20);
         list3.add(30);
         list3.add(40);
-        System.out.println(list3.get(0));
+        //System.out.println(list3.get(0));
+        System.out.println(list3);
 
-        
+        list3.set(0, 100);
+        System.out.println(list3);
+
+        //toArray - convert a list into array
+
 //        List<Integer> list = new ArrayList<>();
 //        Collection<Integer> collection = new ArrayList<>();
 
