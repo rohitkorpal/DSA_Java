@@ -53,8 +53,7 @@ public class JavaCollectionFramework {
         }
         // iterator has [has next()]
 
-
-
+        
 //        List<Integer> list = new ArrayList<>();
 //        Collection<Integer> collection = new ArrayList<>();
 
