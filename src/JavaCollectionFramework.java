@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 
 public class JavaCollectionFramework {
@@ -42,6 +43,16 @@ public class JavaCollectionFramework {
         System.out.println("printing list 2:"+list2);
         list2.clear();
         System.out.println(list2.size());
+
+        //iterator -> standard way to traverse over any data structure
+
+        //i want to traverse list using iterator
+        Iterator<Integer> iterator = list.iterator();
+        while(iterator.hasNext()){
+            System.out.println("element: "+ iterator.next());
+        }
+        // iterator has [has next()]
+
 
 
 //        List<Integer> list = new ArrayList<>();
