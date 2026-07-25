@@ -6,7 +6,7 @@ import java.util.List;
 public class JavaCollectionFramework {
     // JCF is a set of interfaces and classes to implement various data structures and algos
     //collection is the root interface
-    static void main() {
+    public static void main(String[] args) {
         // list or collection -> interface -> object creation not possible
         ArrayList<Integer> list = new ArrayList<>();
 
@@ -52,6 +52,7 @@ public class JavaCollectionFramework {
             System.out.println("element: "+ iterator.next());
         }
         // iterator has [has next()] to iterate over the array or list
+
 
         
 //        List<Integer> list = new ArrayList<>();
