@@ -150,7 +150,7 @@ public class BasicMaths {
         }
     }
 
-    static void main() {
+    public static void main(String[] args) {
         // most imp concept
         //suppose we need to get 5 from 57123 we use '%10'.
         // '%10' get any last digit form the number,'%' it gives the remainder
