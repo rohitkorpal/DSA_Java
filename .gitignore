@@ -1,1 +1,20 @@
-/bin/
+﻿# Ignore everything except the src/ folder and this .gitignore
+/*
+
+# Keep this .gitignore tracked so repo rules apply
+!.gitignore
+
+# Keep the src directory and all its contents (DSA code)
+!/src/
+!/src/**
+
+# (Optional) common ignores — redundant because of /* but left for clarity
+out/
+bin/
+*.class
+*.log
+*.tmp
+*.idea/
+*.iml
+*.classpath
+*.project
