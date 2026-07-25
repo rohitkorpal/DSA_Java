@@ -1,9 +1,10 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class JavaCollectionFramework {
     // JCF is a set of interfaces and classes to implement various data structures and algos
     //collection is the root interface
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 //        // list or collection -> interface -> object creation not possible
 //        ArrayList<Integer> list = new ArrayList<>();
 //
@@ -72,22 +73,28 @@ public class JavaCollectionFramework {
 
 //        List<Integer> list = new ArrayList<>();
 
-       List<Integer> collection = new ArrayList<>();
-       collection.add(10);
-       collection.add(6);
-       collection.add(36);
-       collection.add(32);
-       collection.add(48);
-       System.out.println(collection);
+        List<Integer> collection = new ArrayList<>();
+        collection.add(10);
+        collection.add(6);
+        collection.add(36);
+        collection.add(32);
+        collection.add(48);
+        System.out.println(collection);
 
-       //sort an array list or collection
+        //sort an array list or collection
 
-       //ascending order
+        //ascending order
 //       Collections.sort(collection);
 //       System.out.println(collection);
 
-       //descending order
-       Collections.reverse(collection);
-       System.out.println(collection);
+        //descending order
+//        Collections.reverse(collection);
+//        System.out.println(collection);
+
+        //.clone
+        ArrayList<Integer> clonedlist = (ArrayList<Integer>) ((ArrayList<Integer>) collection).clone();
+        System.out.println(clonedlist);
+
+
     }
 }
