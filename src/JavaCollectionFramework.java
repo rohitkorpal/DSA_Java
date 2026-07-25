@@ -54,6 +54,7 @@ public class JavaCollectionFramework {
         // iterator has [has next()] to iterate over the array or list
 
 
+
         
 //        List<Integer> list = new ArrayList<>();
 //        Collection<Integer> collection = new ArrayList<>();
