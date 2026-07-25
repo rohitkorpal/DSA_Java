@@ -51,7 +51,7 @@ public class JavaCollectionFramework {
         while(iterator.hasNext()){
             System.out.println("element: "+ iterator.next());
         }
-        // iterator has [has next()]
+        // iterator has [has next()] to iterate over the array or list
 
         
 //        List<Integer> list = new ArrayList<>();
