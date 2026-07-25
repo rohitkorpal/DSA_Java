@@ -72,9 +72,22 @@ public class JavaCollectionFramework {
 
 //        List<Integer> list = new ArrayList<>();
 
-       Collection<Integer> collection = new ArrayList<>();
-       collection.add(1);
+       List<Integer> collection = new ArrayList<>();
+       collection.add(10);
+       collection.add(6);
+       collection.add(36);
+       collection.add(32);
+       collection.add(48);
        System.out.println(collection);
 
+       //sort an array list or collection
+
+       //ascending order
+//       Collections.sort(collection);
+//       System.out.println(collection);
+
+       //descending order
+       Collections.reverse(collection);
+       System.out.println(collection);
     }
 }
