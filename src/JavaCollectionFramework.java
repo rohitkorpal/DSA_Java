@@ -50,7 +50,7 @@ public class JavaCollectionFramework {
 //            System.out.println("element: "+ iterator.next());
 //        }
 //        // iterator has [has next()] to iterate over the array or list
-//
+
 //        List<Integer> list3 = new ArrayList<>();
 //        list3.add(10);
 //        list3.add(20);
@@ -67,8 +67,8 @@ public class JavaCollectionFramework {
 //       for(Object o : array){
 //           System.out.println(o);
 //       }
-//
-//       //contains -- checks whether a list has the given element or not. returns true or false
+
+//       // contains -- checks whether a list has the given element or not. returns true or false
 //       System.out.println(list3.contains(100));
 
 //        List<Integer> list = new ArrayList<>();
@@ -95,13 +95,21 @@ public class JavaCollectionFramework {
 //        ArrayList<Integer> clonedlist = (ArrayList<Integer>) ((ArrayList<Integer>) collection).clone();
 //        System.out.println(" cloned list:"+clonedlist);
 
+        //.ensureCapacity
 //        ArrayList<Integer> anotherClonedList = new ArrayList<>();
 //        anotherClonedList.ensureCapacity(550); //prevents memory wastage by allocating more memory than needed.
         // generalLy when the threshold of the arraylist reaches then a new memory is allocated and the values of old memory are
         //copied to the new memory location then reference is stored which takes a lot ofg memory when done frequently so to prevent
         // this we use ensureCapacity method which allocates the memory in advance and prevents wastage of memory.
-
 //        System.out.println(clonedlist.isEmpty());
+
+        // .index function
+//        System.out.println(collection.indexOf(36));
+
+        // JAVA LINKEDLIST (doubly linked list)
+        //collection of nodes
+        // each node has 3 type of data- prev, data, next
+        // prev- has the reference to previous node
 
 
     }
