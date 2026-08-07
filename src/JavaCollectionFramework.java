@@ -93,7 +93,8 @@ public class JavaCollectionFramework {
 
         //.clone
         ArrayList<Integer> clonedlist = (ArrayList<Integer>) ((ArrayList<Integer>) collection).clone();
-        System.out.println(clonedlist);
+        System.out.println(" cloned list:"+clonedlist);
+
 
 
     }
