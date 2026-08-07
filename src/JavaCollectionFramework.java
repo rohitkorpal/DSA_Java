@@ -73,12 +73,12 @@ public class JavaCollectionFramework {
 
 //        List<Integer> list = new ArrayList<>();
 
-//        List<Integer> collection = new ArrayList<>();
-//        collection.add(10);
-//        collection.add(6);
-//        collection.add(36);
-//        collection.add(32);
-//        collection.add(48);
+        List<Integer> collection = new ArrayList<>();
+        collection.add(10);
+        collection.add(6);
+        collection.add(36);
+        collection.add(32);
+        collection.add(48);
         //System.out.println(collection);
 
         //sort an array list or collection
@@ -95,8 +95,13 @@ public class JavaCollectionFramework {
 //        ArrayList<Integer> clonedlist = (ArrayList<Integer>) ((ArrayList<Integer>) collection).clone();
 //        System.out.println(" cloned list:"+clonedlist);
 
-        ArrayList<Integer> anotherClonedList = new ArrayList<>();
-        anotherClonedList.ensureCapacity(550);
+//        ArrayList<Integer> anotherClonedList = new ArrayList<>();
+//        anotherClonedList.ensureCapacity(550); //prevents memory wastage by allocating more memory than needed.
+        // generalLy when the threshold of the arraylist reaches then a new memory is allocated and the values of old memory are
+        //copied to the new memory location then reference is stored which takes a lot ofg memory when done frequently so to prevent
+        // this we use ensureCapacity method which allocates the memory in advance and prevents wastage of memory.
+
+//        System.out.println(clonedlist.isEmpty());
 
 
     }
