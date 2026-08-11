@@ -107,7 +107,7 @@ public class JavaCollectionFramework {
 //        System.out.println(collection.indexOf(36));
 
         // JAVA LINKEDLIST (doubly linked list)
-        //collection of nodes
+        // collection of nodes, each element is a node.
         // each node has 3 type of data- prev, data, next
         // prev- has the reference to previous node
 
