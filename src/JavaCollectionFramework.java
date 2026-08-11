@@ -142,5 +142,6 @@ public class JavaCollectionFramework {
         System.out.println(linkedList.getLast()); //returns the last element
 
 
+
     }
 }
