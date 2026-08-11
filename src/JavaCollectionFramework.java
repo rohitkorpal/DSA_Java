@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class JavaCollectionFramework {
@@ -73,12 +74,12 @@ public class JavaCollectionFramework {
 
 //        List<Integer> list = new ArrayList<>();
 
-        List<Integer> collection = new ArrayList<>();
-        collection.add(10);
-        collection.add(6);
-        collection.add(36);
-        collection.add(32);
-        collection.add(48);
+//        List<Integer> collection = new ArrayList<>();
+//        collection.add(10);
+//        collection.add(6);
+//        collection.add(36);
+//        collection.add(32);
+//        collection.add(48);
         //System.out.println(collection);
 
         //sort an array list or collection
@@ -110,6 +111,35 @@ public class JavaCollectionFramework {
         // collection of nodes, each element is a node.
         // each node has 3 type of data- prev, data, next
         // prev- has the reference to previous node
+
+        //Implementation
+        List<Integer> linkedList = new LinkedList<>();
+        linkedList.add(10);
+        linkedList.add(20);
+        linkedList.add(30);
+        linkedList.add(23);
+        linkedList.add(30);
+        System.out.println(linkedList);
+        //.lastIndexOf
+        System.out.println(linkedList.lastIndexOf(30));
+        //System.out.println(linkedList.indexOf(20));
+        //all the operations of arraylist are applicable to linkedlist as well
+        // only cloning using .clone not possible in linkedlist
+
+        //linked list can implement methods of queue and deque as well
+
+        //addFirst and addLast
+        System.out.println(linkedList);
+        linkedList.addFirst(100); //adds element at the first position
+        linkedList.addLast(200); //adds element at the last position
+        System.out.println(linkedList);
+
+        linkedList.removeFirst(); //removes element from the first position
+        linkedList.removeLast(); //removes element from the last position
+        System.out.println(linkedList);
+
+        System.out.println(linkedList.getFirst()); //returns the first element
+        System.out.println(linkedList.getLast()); //returns the last element
 
 
     }
