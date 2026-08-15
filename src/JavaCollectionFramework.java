@@ -141,6 +141,18 @@ public class JavaCollectionFramework {
         System.out.println(linkedList.getFirst()); //returns the first element
         System.out.println(linkedList.getLast()); //returns the last element
 
+        List<Integer> linkedList2 = new LinkedList<>();
+        linkedList2.add(10);
+        linkedList2.add(20);
+        linkedList2.add(30);
+        System.out.println(linkedList2);
+//        System.out.println(linkedList2.peek()); //returns the first element without removing it
+//        System.out.println(linkedList2.peekFirst()); //returns the first element without removing it
+//        System.out.println(linkedList2.peekLast()); //returns the last element without removing it
+//
+//        System.out.println(linkedList2.poll()); //removes and returns the first element
+//        System.out.println(linkedList2.pollFirst()); //removes and returns the first element
+//        System.out.println(linkedList2.pollLast()); //removes and returns the last element
 
 
     }
