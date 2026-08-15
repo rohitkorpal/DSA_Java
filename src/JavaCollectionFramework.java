@@ -113,15 +113,15 @@ public class JavaCollectionFramework {
         // prev- has the reference to previous node
 
         //Implementation
-        List<Integer> linkedList = new LinkedList<>();
-        linkedList.add(10);
-        linkedList.add(20);
-        linkedList.add(30);
-        linkedList.add(23);
-        linkedList.add(30);
-        System.out.println(linkedList);
-        //.lastIndexOf
-        System.out.println(linkedList.lastIndexOf(30));
+//        List<Integer> linkedList = new LinkedList<>();
+//        linkedList.add(10);
+//        linkedList.add(20);
+//        linkedList.add(30);
+//        linkedList.add(23);
+//        linkedList.add(30);
+//        System.out.println(linkedList);
+//        //.lastIndexOf
+//        System.out.println(linkedList.lastIndexOf(30));
         //System.out.println(linkedList.indexOf(20));
         //all the operations of arraylist are applicable to linkedlist as well
         // only cloning using .clone not possible in linkedlist
@@ -129,23 +129,23 @@ public class JavaCollectionFramework {
         //linked list can implement methods of queue and deque as well
 
         //addFirst and addLast
-        System.out.println(linkedList);
-        linkedList.addFirst(100); //adds element at the first position
-        linkedList.addLast(200); //adds element at the last position
-        System.out.println(linkedList);
-
-        linkedList.removeFirst(); //removes element from the first position
-        linkedList.removeLast(); //removes element from the last position
-        System.out.println(linkedList);
-
-        System.out.println(linkedList.getFirst()); //returns the first element
-        System.out.println(linkedList.getLast()); //returns the last element
+//        System.out.println(linkedList);
+//        linkedList.addFirst(100); //adds element at the first position
+//        linkedList.addLast(200); //adds element at the last position
+//        System.out.println(linkedList);
+//
+//        linkedList.removeFirst(); //removes element from the first position
+//        linkedList.removeLast(); //removes element from the last position
+//        System.out.println(linkedList);
+//
+//        System.out.println(linkedList.getFirst()); //returns the first element
+//        System.out.println(linkedList.getLast()); //returns the last element
 
         List<Integer> linkedList2 = new LinkedList<>();
         linkedList2.add(10);
         linkedList2.add(20);
         linkedList2.add(30);
-        System.out.println(linkedList2);
+        //System.out.println(linkedList2);
 //        System.out.println(linkedList2.peek()); //returns the first element without removing it
 //        System.out.println(linkedList2.peekFirst()); //returns the first element without removing it
 //        System.out.println(linkedList2.peekLast()); //returns the last element without removing it
@@ -154,6 +154,9 @@ public class JavaCollectionFramework {
 //        System.out.println(linkedList2.pollFirst()); //removes and returns the first element
 //        System.out.println(linkedList2.pollLast()); //removes and returns the last element
 
+        System.out.println("before: " + linkedList2);
+        System.out.println("polling: " + ((LinkedList<Integer>) linkedList2).poll());
+        System.out.println("after: " + linkedList2);
 
     }
 }
