@@ -205,5 +205,15 @@ public class JavaCollectionFramework {
 //        stack2.push("Bob");
 //        stack2.push("Charlie");
 //        System.out.println(stack2);
+
+        //Deque interface - double ended queue, allows insertion and deletion of elements from both ends, can be used to implement stack and queue data structures
+        //ArrayDeque is a double-ended queue (Deque) in Java. It allows you to add/remove elements from both ends.
+        //The biggest reason is that Stack is an old/legacy class, while ArrayDeque is the recommended implementation for stack operations when you don't need thread synchronization.
+
+        Deque<Integer> deque = new ArrayDeque<>();
+        deque.addFirst(10);
+        deque.addLast(20);
+        System.out.println(deque.pop()); // removes and returns the first element
+        System.out.println(deque.pollLast()); // removes and returns the last element
     }
 }
