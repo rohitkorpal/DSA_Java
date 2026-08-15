@@ -3,25 +3,18 @@
 This repository contains my solutions and implementations of Data Structures and Algorithms in Java.
 
 ## Topics Covered
-- Arrays
-- Array Homeworks
-- Strings
-- String Homeworks
-- Basics
-- Basic Maths
-- Conditionals
-- Datatypes
-- Loops
-- Loop Homeworks
-- Methods
-- Operators
+- Basics: Datatypes, Variables, Operators, Conditionals, Loops, Methods, Taking Input
+- Arrays: fundamentals, operations, practice problems
+- Strings: manipulation and problems
 - Pattern Solving
-- Taking Input
-- Variables
-- Encapsulation.Encapsulation
-- Inheritance.Inheritance
-- Types of Inheritance.Inheritance
-- polymorphism.Polymorphism
+- Math & Number Theory
+- Recursion
+- Searching & Sorting
+- Linked Lists
+- Stacks & Queues
+- Trees & Graphs
+- Hashing & Maps
+- Dynamic Programming
 
 ## Goal
 Consistent DSA practice for placements and problem-solving improvement.
