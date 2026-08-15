@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Vector;
+import java.util.*;
 
 public class JavaCollectionFramework {
     // JCF is a set of interfaces and classes to implement various data structures and algos
@@ -167,11 +164,44 @@ public class JavaCollectionFramework {
         // Vector - allows to create resizable array, similar to ArrayList but synchronized and thread-safe
         // it locks the memory when one thread is accessing it and other threads have to wait for the lock to be released before they can access it
         // list and colllection ka sb element isma bhi work krte ha
-        Vector<Integer> vector = new Vector<>();
-        vector.add(10);
-        vector.add(20);
-        vector.add(30);
-        System.out.println(vector);
+//        Vector<Integer> vector = new Vector<>();
+//        vector.add(10);
+//        vector.add(20);
+//        vector.add(30);
+//        System.out.println(vector);
 
+        //Java Stack - LIFO (Last In First Out) data structure, similar to a stack of plates where the last plate added is the first one to be removed
+        // it is a subclass of Vector class and inherits all the methods of Vector class
+        // it has 3 main methods - push(), pop() and peek()
+        // push() - adds an element to the top of the stack
+        // pop() - removes and returns the top element of the stack
+        // peek() - returns the top element of the stack without removing it
+        // it is synchronized and thread-safe
+        // it is not recommended to use Stack class in Java, instead use Deque interface and its implementation classes like ArrayDeque and LinkedList
+        // Deque interface provides methods like addFirst(), addLast(), removeFirst(), removeLast(), peekFirst(), peekLast() etc. which can be used to implement stack and queue data structures
+        // it is more efficient than Stack class as it does not have the overhead of synchronization and is not thread-safe
+        // it is recommended to use ArrayDeque class for stack implementation as it is more efficient than LinkedList class
+        // it is recommended to use LinkedList class for queue implementation as it is more efficient than ArrayDeque class
+
+        Stack<Integer> stack = new Stack<>();
+        stack.push(21);
+        stack.push(22);
+        stack.push(23);
+        System.out.println(stack);
+        stack.pop();
+        System.out.println(stack);
+        System.out.println(stack.peek());
+        System.out.println(stack.isEmpty());
+
+        //.search() method returns the 1-based position of the element in the stack, if found, otherwise returns -1
+        System.out.println(stack.search(22));
+        System.out.println(stack.search(23));
+        System.out.println(stack.search(21));
+
+//        Stack<String> stack2 = new Stack<>();
+//        stack2.push("Alice");
+//        stack2.push("Bob");
+//        stack2.push("Charlie");
+//        System.out.println(stack2);
     }
 }
