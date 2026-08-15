@@ -27,7 +27,9 @@ public class JCF2 {
         System.out.println("Removed head of the queue: " + queue.poll());
         System.out.println("Queue after removal: " + queue);
 
-
+        // in queue for insertion we use offer()
+        // and for deletion we use poll() method.
+        // For retrieval we use peek() method.
 
     }
 }
