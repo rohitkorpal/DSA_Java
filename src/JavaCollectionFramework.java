@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Vector;
 
 public class JavaCollectionFramework {
     // JCF is a set of interfaces and classes to implement various data structures and algos
@@ -141,10 +142,10 @@ public class JavaCollectionFramework {
 //        System.out.println(linkedList.getFirst()); //returns the first element
 //        System.out.println(linkedList.getLast()); //returns the last element
 
-        List<Integer> linkedList2 = new LinkedList<>();
-        linkedList2.add(10);
-        linkedList2.add(20);
-        linkedList2.add(30);
+//        List<Integer> linkedList2 = new LinkedList<>();
+//        linkedList2.add(10);
+//        linkedList2.add(20);
+//        linkedList2.add(30);
         //System.out.println(linkedList2);
 //        System.out.println(linkedList2.peek()); //returns the first element without removing it
 //        System.out.println(linkedList2.peekFirst()); //returns the first element without removing it
@@ -154,9 +155,23 @@ public class JavaCollectionFramework {
 //        System.out.println(linkedList2.pollFirst()); //removes and returns the first element
 //        System.out.println(linkedList2.pollLast()); //removes and returns the last element
 
-        System.out.println("before: " + linkedList2);
-        System.out.println("polling: " + ((LinkedList<Integer>) linkedList2).poll());
-        System.out.println("after: " + linkedList2);
+//        System.out.println("before: " + linkedList2);
+//        System.out.println("polling: " + ((LinkedList<Integer>) linkedList2).poll());
+//        System.out.println("after: " + linkedList2);
+
+        //offer() method adds an element to the end of the list
+//        System.out.println("before: " + linkedList2);
+//        System.out.println("offering: " + ((LinkedList<Integer>) linkedList2).offer(40));
+//        System.out.println("after: " + linkedList2);
+
+        // Vector - allows to create resizable array, similar to ArrayList but synchronized and thread-safe
+        // it locks the memory when one thread is accessing it and other threads have to wait for the lock to be released before they can access it
+        // list and colllection ka sb element isma bhi work krte ha
+        Vector<Integer> vector = new Vector<>();
+        vector.add(10);
+        vector.add(20);
+        vector.add(30);
+        System.out.println(vector);
 
     }
 }
