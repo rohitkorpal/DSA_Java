@@ -13,5 +13,11 @@ public class StackBasics {
         Stack.push(2);
         Stack.push(3);
         System.out.println("Stack: " + Stack);
+
+        Stack.pop();
+        System.out.println("Stack after pop: " + Stack);
+
+
+
     }
 }
