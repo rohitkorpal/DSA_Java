@@ -35,10 +35,13 @@ public class JavaSet {
 //        Set2.add(40);
 //        Set2.add(50);
 //
+//        Set1.removeAll(Set2);
+//        System.out.println(Set1);
+
 //        Set1.retainAll(Set2);
 //        System.out.println(Set1);
 //        System.out.println(Set2);
-//
+
 //        System.out.println(Set1.containsAll(Set2));
 //        System.out.println(Set2.containsAll(Set1));
 
@@ -66,14 +69,14 @@ public class JavaSet {
 //        System.out.println(linkedSet);
 
         //TreeSet example
-        TreeSet<Integer> treeSet = new TreeSet<>();
-        treeSet.add(50);
-        treeSet.add(40);
-        treeSet.add(20);
-        treeSet.add(10);
-        treeSet.add(20);
-        treeSet.add(10);
-        System.out.println(treeSet);
+//        TreeSet<Integer> treeSet = new TreeSet<>();
+//        treeSet.add(50);
+//        treeSet.add(40);
+//        treeSet.add(20);
+//        treeSet.add(10);
+//        treeSet.add(20);
+//        treeSet.add(10);
+//        System.out.println(treeSet);
 
 
         //HashedSet -> unordered collection of unique elements -> O(1) time complexity for add, remove, contains operations
