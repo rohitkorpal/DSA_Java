@@ -2,6 +2,7 @@ package JavaCollectionFramework;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.Set;
 import java.util.TreeSet;
 
 public class JavaSet {
@@ -16,15 +17,38 @@ public class JavaSet {
         //LinkedHashSet -> ordered collection of unique elements
         //TreeSet -> sorted collection of unique elements
 
+        // RetainAll() method is used to retain only the elements in this set that are contained in the specified collection.
+        // In other words, it removes from this set all of its elements that are not contained in the specified collection.
+
+        Set<Integer> Set1 = new HashSet<>();
+        Set<Integer> Set2 = new HashSet<>();
+
+        Set1.add(10);
+        Set1.add(20);
+        Set1.add(30);
+        Set1.add(40);
+        Set1.add(50);
+
+        Set2.add(11);
+        Set2.add(21);
+        Set2.add(31);
+        Set2.add(40);
+        Set2.add(50);
+
+        Set1.retainAll(Set2);
+        System.out.println(Set1);
+
         //HashSet example
-        HashSet<Integer> set = new HashSet<>();
-        set.add(10);
-        set.add(20);
-        set.add(30);
-        set.add(30);
-        set.add(40);
-        set.add(50);
-        System.out.println(set);
+//        HashSet<Integer> set = new HashSet<>();
+//        //set does not allow duplicate elements
+//        //set doesn't maintain the order of elements
+//        set.add(10);
+//        set.add(20);
+//        set.add(30);
+//        set.add(30);
+//        set.add(40);
+//        set.add(50);
+//        System.out.println(set);
 
         //LinkedHashSet example
 //        LinkedHashSet<Integer> linkedSet = new LinkedHashSet<>();
