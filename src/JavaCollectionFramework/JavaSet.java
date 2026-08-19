@@ -37,6 +37,10 @@ public class JavaSet {
 
         Set1.retainAll(Set2);
         System.out.println(Set1);
+        System.out.println(Set2);
+
+        System.out.println(Set1.containsAll(Set2));
+        System.out.println(Set2.containsAll(Set1));
 
         //HashSet example
 //        HashSet<Integer> set = new HashSet<>();
