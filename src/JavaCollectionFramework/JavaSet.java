@@ -8,6 +8,17 @@ import java.util.TreeSet;
 public class JavaSet {
     static void main() {
 
+        HashSet<Student> students = new HashSet<>();
+        Student s1 = new Student(1, "Alice");
+        Student s2 = new Student(2, "Bob");
+        Student s3 = new Student(1, "Alice"); // Duplicate roll number
+        //had to make hashcode and equals method in Student class to avoid duplicate roll numbers in the set
+        students.add(s1);
+        students.add(s2);
+        students.add(s3);
+
+        System.out.println(students);
+
         //set is a collection of unique elements
         //set is an interface
         //HashSet, LinkedHashSet, TreeSet are classes that implement Set interface
