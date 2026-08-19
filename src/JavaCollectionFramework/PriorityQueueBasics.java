@@ -17,15 +17,26 @@ public class PriorityQueueBasics {
 //        System.out.println(PriorityQueue.poll() + " is removed from the PriorityQueue");
 //        System.out.println("PriorityQueue after second removal: " + PriorityQueue);
 
-        Queue<Integer>MaxPriorityQueue = new PriorityQueue<>((a,b)->b-a); //comparator -> reverse order -> max heap -> higher value -> higher priority
-        MaxPriorityQueue.offer(5);
-        MaxPriorityQueue.offer(3);
-        MaxPriorityQueue.offer(8);
-        MaxPriorityQueue.offer(29);
-        MaxPriorityQueue.offer(21);
-        System.out.println("MaxPriorityQueue: " + MaxPriorityQueue);
-        System.out.println(MaxPriorityQueue.poll() + " is removed from the MaxPriorityQueue");
-        System.out.println("MaxPriorityQueue after removal: " + MaxPriorityQueue);
+//        Queue<Integer>MaxPriorityQueue = new PriorityQueue<>((a,b)->b-a); //comparator -> reverse order -> max heap -> higher value -> higher priority
+//        MaxPriorityQueue.offer(5);
+//        MaxPriorityQueue.offer(3);
+//        MaxPriorityQueue.offer(8);
+//        MaxPriorityQueue.offer(29);
+//        MaxPriorityQueue.offer(21);
+//        System.out.println("MaxPriorityQueue: " + MaxPriorityQueue);
+//        System.out.println(MaxPriorityQueue.poll() + " is removed from the MaxPriorityQueue");
+//        System.out.println("MaxPriorityQueue after removal: " + MaxPriorityQueue);
+
+        //pq-> strings -> own comparator logic -> based on length of string -> shorter string -> higher priority
+        Queue<String> StringPriorityQueue = new PriorityQueue<>((a,b)->a.length()-b.length());
+        StringPriorityQueue.offer("apple");
+        StringPriorityQueue.offer("banana");
+        StringPriorityQueue.offer("kiwi");
+        System.out.println("StringPriorityQueue: " + StringPriorityQueue);
+        System.out.println(StringPriorityQueue.poll() + " is removed from the StringPriorityQueue");
+        System.out.println("StringPriorityQueue after removal: " + StringPriorityQueue);
+
+
 
     }
 }
